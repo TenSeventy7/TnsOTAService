@@ -103,3 +103,4 @@ fields:
   description: Information for the full-type package of the release.
 pages:
 - content/fresh/a50xx/beta/20210204001.md
+- content/fresh/a50xx/beta/3.0-alpha-2.md
