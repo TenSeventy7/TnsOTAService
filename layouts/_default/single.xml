@@ -1,0 +1,48 @@
+{{ define "response" }}
+  {{ $addons := (where (where $.Site.RegularPages "Section" "addons" ) "Params.rom" (.FirstSection.Params.id)) }}
+  {{ $addonCount := len $addons }}
+  <RomName>{{ print .FirstSection.Params.title }}</RomName>
+  <Release type="integer">2</Release>
+  <BuildVersion type="integer">{{ .Params.buildVersion }}</BuildVersion>
+  <VersionNumber type="integer">{{ .Params.buildVersion }}</VersionNumber>
+  <VersionName>{{ print .FirstSection.Params.title " " .Params.releaseVersion " " .Params.releaseVariant }}</VersionName>
+  <ReleaseVersion>{{ .Params.releaseVersion }}</ReleaseVersion>
+  <ReleaseVariant>{{ .Params.releaseVariant }}</ReleaseVariant>
+
+  {{ with .CurrentSection.Params.urls.forum }}<WebsiteURL>{{ . }}</WebsiteURL>{{ end }}
+  {{ with .CurrentSection.Params.urls.forum }}<ForumURL>{{ . }}</ForumURL>{{ end }}
+  {{ with .FirstSection.Params.urls.discord }}<DiscordURL>{{ . }}</DiscordURL>{{ end }}
+  {{ with .FirstSection.Params.urls.gitIssues }}<GitIssues>{{ . }}</GitIssues>{{ end }}
+  {{ with .FirstSection.Params.urls.gitDiscussion }}<GitDiscussion>{{ . }}</GitDiscussion>{{ end }}
+  {{ if .Site.Params.donateUrl }}<DonateURL>{{ . }}</DonateURL>{{else}}<DonateURL nil="true" />{{ end }}
+
+  <Addons>    
+    <AddonsCount type="integer">{{ $addonCount }}</AddonsCount>
+    <AddonsManifest>{{ .Site.BaseURL }}addons/{{ .FirstSection.Params.id }}/</AddonsManifest>
+  </Addons>
+
+  <System>
+    <Android>{{ .Params.android.version }}</Android>
+    {{ with .Params.android.sesl }}<Sesl>{{ . }}</Sesl>{{ end }}
+    {{ with .Params.android.spl }}<SPL>{{ dateFormat "2006-01-02" . }}</SPL>{{ end }}
+  </System>
+
+  <DeltaPackage>
+    <DeltaPackageUrl>{{ .Params.delta.packageUrl }}</DeltaPackageUrl>
+    <DeltaPackageSize type="integer">{{ .Params.delta.packageSize }}</DeltaPackageSize>
+    <DeltaPackageHash>{{ .Params.delta.packageHash }}</DeltaPackageHash>
+  </DeltaPackage>
+
+  <FullPackage>
+    <FullPackageUrl>{{ .Params.full.packageUrl }}</FullPackageUrl>
+    <FullPackageSize type="integer">{{ .Params.full.packageSize }}</FullPackageSize>
+    <FullPackageHash>{{ .Params.full.packageHash }}</FullPackageHash>
+  </FullPackage>
+
+  <DirectUrl>{{ .Params.delta.packageUrl }}</DirectUrl>
+  <FileSize type="integer">{{ .Params.delta.packageSize }}</FileSize>
+  <CheckMD5>{{ .Params.delta.packageHash }}</CheckMD5>
+
+  <Changelog>{{ .RawContent }}</Changelog>
+  <Developer nil="true" />
+{{ end }}

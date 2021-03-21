@@ -1,0 +1,14 @@
+{{ define "response" }}
+{{ $.Scratch.Set "counter" 0 }}
+  {{ range .Pages }}
+    {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
+	    <addon>
+	    <id>{{ add ($.Scratch.Get "counter") 400000}}</id>
+	    <name>{{ .Title }}</name>
+	    <description>{{ replace (.Plain) "\n" " " }}</description>
+	    {{ with .Params.publishDate }}<updated-at>{{ .Format "2006-01-02" }}</updated-at>{{ end }}
+	    <size type="integer">{{ .Params.addon.packageSize }}</size>
+	    <download-link>{{ .Params.addon.packageUrl }}</download-link>
+	</addon>
+  {{ end }}
+{{ end }}
