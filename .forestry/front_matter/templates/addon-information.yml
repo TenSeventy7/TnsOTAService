@@ -68,3 +68,4 @@ fields:
   description: Information about the addon package.
 pages:
 - content/addons/accuweather.md
+- content/addons/quick-share.md
