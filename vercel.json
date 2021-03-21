@@ -1,6 +1,10 @@
 {
   "cleanUrls": true,
   "trailingSlash": true,
+  "redirects": [
+    { "source": "/addons", "destination": "/" }
+    { "source": "/fresh", "destination": "/" }
+  ],
   "github": {
     "silent": true,
     "autoJobCancelation": true
