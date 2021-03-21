@@ -4,55 +4,100 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
+  description: Title of the release.
 - type: number
   name: buildVersion
-  label: buildVersion
+  label: Build Version
+  description: Numerical Build version of the release. <strong>Must be higher than
+    current release!</strong>
+  config:
+    required: true
+    step: 1
 - type: text
   name: releaseVersion
-  label: releaseVersion
-- type: text
-  name: releaseVariant
-  label: releaseVariant
+  label: Release Version
+  description: Human-readable Release Version.
+  config:
+    required: true
+- name: releaseVariant
+  type: select
+  default: []
+  config:
+    required: true
+    options:
+    - Stable
+    - Beta
+    - Alpha
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Release Variant
+  description: Variant of the build release.
 - type: datetime
   name: publishDate
-  label: publishDate
-- type: datetime
-  name: creationDate
-  label: creationDate
+  label: Publish Date
+  description: Date from when the release was published.
 - type: field_group
   name: android
-  label: android
   fields:
   - type: text
     name: version
-    label: version
+    label: Android Version
+    description: Android version of the release.
   - type: datetime
     name: spl
-    label: spl
+    label: Security Patch Level
+    description: Android security patch version of the release.
+    config:
+      required: true
+  label: Android Release Information
+  description: Android release information for update.
 - type: field_group
   name: delta
-  label: delta
+  label: Delta Package
   fields:
   - type: text
     name: packageUrl
-    label: packageUrl
+    label: Package URL
+    description: Direct URL of the package.
+    config:
+      required: true
   - type: number
     name: packageSize
-    label: packageSize
+    label: Package Size
+    description: Size of the update package.
+    config:
+      required: true
   - type: text
     name: packageHash
-    label: packageHash
+    label: Package Hash
+    description: MD5 Hash of the package.
+    config:
+      required: true
+  description: Information for the delta-type package of the release.
 - type: field_group
   name: full
-  label: full
+  label: Full Package
   fields:
   - type: text
     name: packageUrl
-    label: packageUrl
+    label: Package URL
+    config:
+      required: true
+    description: Direct URL of the package.
   - type: number
     name: packageSize
-    label: packageSize
+    label: Package Size
+    description: Size of the update package.
+    config:
+      required: true
   - type: text
     name: packageHash
-    label: packageHash
+    label: Package Hash
+    config:
+      required: true
+    description: MD5 Hash of the package.
+  description: Information for the full-type package of the release.
