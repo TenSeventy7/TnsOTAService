@@ -4,35 +4,55 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Name
+  description: Name of the ROM. <strong>Required.</strong>
+  config:
+    required: true
 - type: text
   name: id
-  label: id
+  label: ID
+  description: ID of the ROM.<strong> Required.</strong>
+  config:
+    required: true
 - type: text
   name: description
-  label: description
+  label: Description
+  description: Description of the ROM.
+  config:
+    required: true
 - type: text
   name: releaseType
   label: releaseType
+  hidden: true
+  default: Official
 - type: datetime
   name: creationDate
-  label: creationDate
+  label: First Release Date
+  config:
+    required: true
+  description: Date when the ROM was first released.
 - type: field_group
   name: urls
-  label: urls
   fields:
   - type: text
     name: website
-    label: website
+    label: Website
+    hidden: true
   - type: text
     name: forum
-    label: forum
+    label: Forum URL
+    description: XDA/Android Forums link.
   - type: text
     name: gitIssues
-    label: gitIssues
+    label: Git Issues
+    description: Git Issues link.
   - type: text
     name: gitDiscussion
-    label: gitDiscussion
+    label: GitHub Discussions
+    description: GitHub Discussions link.
   - type: text
     name: discord
-    label: discord
+    label: Discord
+    description: Discord server invite link.
+  label: Links
+  description: Links used by the ROM.
