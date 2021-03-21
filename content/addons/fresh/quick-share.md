@@ -6,7 +6,7 @@ rom = "fresh"
 title = "Quick Share"
 [addon]
 packageHash = "c39e6c38e1292dc0c334307f736a2489"
-packageSize = "98000"
+packageSize = 98000
 packageUrl = "http://downloads.sourceforge.net/project/freshroms/Addons/11.5.2.8/FRSH-Addon_QuickShare_11.5.2.8_20210221001.zip"
 
 +++
