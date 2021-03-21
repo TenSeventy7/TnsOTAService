@@ -4,11 +4,11 @@
     "slug": "{{ .FirstSection.Params.id }}",
     "description": "{{ .FirstSection.Params.description }}",
     "releaseType": "{{ .FirstSection.Params.releaseType }}",
-    {{ with .FirstSection.Params.publishDate }}"published_at": "{{ .Format "2006-01-02" }}",{{ end }}
-    {{ with .FirstSection.Params.creationDate }}"created_at": "{{ .Format "2006-01-02" }}",{{ end }}
+    {{ with .Params.publishDate }}"published_at": "{{ .Format "2006-01-02" }}",{{ end }}
+    {{ with .Params.creationDate }}"created_at": "{{ .Format "2006-01-02" }}",{{ end }}
     "downloads": 10,
-    {{ with .Parent.Params.urls.forum }}"website_url": {{ . | jsonify}},{{ end }}
-    {{ with .Parent.Params.urls.forum }}"forum_url": {{ . | jsonify}},{{ end }}
+    {{ with .Params.urls.forum }}"website_url": {{ . | jsonify}},{{ end }}
+    {{ with .Params.urls.forum }}"forum_url": {{ . | jsonify}},{{ end }}
     {{ with .FirstSection.Params.urls.discord }}"discord_url": {{ . | jsonify}},{{ end }}
     {{ with .FirstSection.Params.urls.gitIssues }}"git_issues_url": {{ . | jsonify}},{{ end }}
     {{ with .FirstSection.Params.urls.gitDiscussion }}"git_discussions_url": {{ . | jsonify}},{{ end }}
