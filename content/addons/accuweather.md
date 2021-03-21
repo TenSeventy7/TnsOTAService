@@ -1,16 +1,15 @@
 +++
+category = "Utilities"
+creationDate = 2021-02-01T00:00:00Z
+description = "Short description of the Addon."
+publishDate = 2021-02-01T00:00:00Z
 rom = "fresh"
 title = "AccuWeather"
-description = "Short description of the Addon."
-category = "Utilities"
-
-publishDate = 2021-02-01T00:00:00Z
-creationDate = 2021-02-01T00:00:00Z
-
 [addon]
-packageUrl = ""
-packageSize = 12345678
 packageHash = "hash"
+packageSize = 12345678
+packageUrl = ""
+
 +++
 AccuWeather
 

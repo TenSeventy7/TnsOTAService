@@ -66,3 +66,5 @@ fields:
       required: true
   label: Package Information
   description: Information about the addon package.
+pages:
+- content/addons/accuweather.md
