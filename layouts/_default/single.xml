@@ -19,6 +19,7 @@
   <Addons>    
     <AddonCount>{{ $addonCount }}</AddonCount>
     <AddonsManifest>{{ .Site.BaseURL }}addons/{{ .FirstSection.Params.id }}/</AddonsManifest>
+    <AddonsURL>{{ .Site.BaseURL }}addons/{{ .FirstSection.Params.id }}/</AddonsURL>
   </Addons>
 
   <System>
