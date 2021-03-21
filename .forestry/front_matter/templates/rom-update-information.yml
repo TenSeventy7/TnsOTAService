@@ -101,3 +101,5 @@ fields:
       required: true
     description: MD5 Hash of the package.
   description: Information for the full-type package of the release.
+pages:
+- content/fresh/a50xx/beta/20210204001.md
