@@ -1,0 +1,38 @@
+---
+label: ROM Information
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: id
+  label: id
+- type: text
+  name: description
+  label: description
+- type: text
+  name: releaseType
+  label: releaseType
+- type: datetime
+  name: creationDate
+  label: creationDate
+- type: field_group
+  name: urls
+  label: urls
+  fields:
+  - type: text
+    name: website
+    label: website
+  - type: text
+    name: forum
+    label: forum
+  - type: text
+    name: gitIssues
+    label: gitIssues
+  - type: text
+    name: gitDiscussion
+    label: gitDiscussion
+  - type: text
+    name: discord
+    label: discord
