@@ -104,5 +104,4 @@ fields:
     description: MD5 Hash of the package.
   description: Information for the full-type package of the release.
 pages:
-- content/fresh/a50xx/beta/3.0-alpha-2.md
 - content/fresh/a50xx/beta/3.0-alpha-4.md
