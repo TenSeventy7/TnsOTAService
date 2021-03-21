@@ -3,33 +3,66 @@ label: Addon Information
 hide_body: false
 fields:
 - type: text
-  name: rom
-  label: rom
-- type: text
   name: title
-  label: title
+  label: Name
+  description: Name of the addon.
+  config:
+    required: true
 - type: text
-  name: description
-  label: description
-- type: text
-  name: category
-  label: category
+  name: rom
+  label: Required ROM
+  description: ROM the addon is meant for. <strong>Must match set ROM ID.</strong>
+  config:
+    required: true
+- name: category
+  type: select
+  default: []
+  config:
+    required: true
+    options:
+    - Utilities
+    - Tools
+    - Games
+    - Internet
+    - Media
+    - Customization
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Category
+  description: Addon category.
 - type: datetime
   name: publishDate
-  label: publishDate
+  label: Update Date
+  config:
+    required: true
+  description: Date of addon update.
 - type: datetime
   name: creationDate
-  label: creationDate
+  label: Publish Date
+  description: Date of first addon release.
 - type: field_group
   name: addon
-  label: addon
   fields:
   - type: text
     name: packageUrl
-    label: packageUrl
+    label: Package URL
+    description: URL of the addon package.
+    config:
+      required: true
   - type: number
     name: packageSize
-    label: packageSize
+    label: Package Size
+    description: Size of the addon package.
+    config:
+      required: true
   - type: text
     name: packageHash
-    label: packageHash
+    label: Package Hash
+    description: MD5 Hash of addon package.
+    config:
+      required: true
+  label: Package Information
+  description: Information about the addon package.
