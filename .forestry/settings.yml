@@ -5,13 +5,15 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: content/addons
-  label: Addons
-  create: all
-  match: "**/*"
-- type: directory
   path: content/fresh
   label: Fresh
+  create: all
+  match: "**/*"
+  templates:
+  - rom-update-information
+- type: directory
+  path: content/addons
+  label: Addons
   create: all
   match: "**/*"
 upload_dir: static/uploads
