@@ -17,7 +17,7 @@
   {{ if .Site.Params.donateUrl }}<DonateURL>{{ . }}</DonateURL>{{else}}<DonateURL nil="true" />{{ end }}
 
   <Addons>    
-    <AddonsCount type="integer">{{ $addonCount }}</AddonsCount>
+    <AddonCount>{{ $addonCount }}</AddonCount>
     <AddonsManifest>{{ .Site.BaseURL }}addons/{{ .FirstSection.Params.id }}/</AddonsManifest>
   </Addons>
 
