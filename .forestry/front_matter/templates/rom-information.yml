@@ -56,5 +56,3 @@ fields:
     description: Discord server invite link.
   label: Links
   description: Links used by the ROM.
-pages:
-- content/fresh/_index.md

@@ -13,11 +13,6 @@ sections:
   path: content/fresh
   label: Fresh
   create: all
-  match: "**/*"
-- type: directory
-  path: content
-  label: Pages
-  create: all
   match: "*"
 upload_dir: static/uploads
 public_path: "/uploads"
