@@ -7,7 +7,7 @@ title = "Quick Share"
 [addon]
 packageHash = "hash"
 packageSize = 124
-packageUrl = "url"
+packageUrl = "http://downloads.sourceforge.net/project/freshroms/Addons/11.5.2.8/FRSH-Addon_QuickShare_11.5.2.8_20210221001.zip"
 
 +++
 Quick Share addon for Samsung One UI.
