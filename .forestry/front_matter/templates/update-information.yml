@@ -53,6 +53,7 @@ fields:
     description: Android security patch version of the release.
     config:
       required: true
+      export_format: YYYY-MM-DDTh:mm:ssZ
   label: Android Release Information
   description: Android release information for update.
 - type: field_group
