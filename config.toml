@@ -1,0 +1,11 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Tensevntysevn OTA Services"
+
+[outputs]
+    page = ["json"]
+    section = ["json"]
+    home = ["json"]
+
+[params]
+	donateUrl = ""
