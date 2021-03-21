@@ -1,0 +1,45 @@
+{
+  "rom": {
+    "id": 1,
+    "name": "Unsupported ROM",
+    "slug": "unsupport",
+    "description": "Unsupported ROM",
+    "releaseType": "Unofficial",
+    "published_at": "2021-01-01",
+    "created_at": "2021-01-01",
+    "downloads": 10,
+    "versions": [{
+        "version": {
+          "id": 1,
+          "full_name": "Unsupported Release",
+          "release_version": "1.0",
+          "release_variant": "Release",
+          "slug": "unsupport",
+          "android_version": "1",
+          "android_spl": "2021-01-01",
+          "changelog": "Release unsupported.",
+          "published_at": "2021-01-01",
+          "created_at": "2021-01-01",
+          "downloads": 10,
+          "version_number": 0,
+          "full_upload": {
+            "id": 2,
+            "downloads": 10,
+            "size": 123,
+            "md5": "hash",
+            "download_link": "",
+            "status": "string"
+          },
+          "delta_upload": {
+            "id": 3,
+            "downloads": 10,
+            "size": 123,
+            "md5": "hash",
+            "download_link": "",
+            "status": "string"
+          }
+        }
+      }
+    ]
+  }
+}
