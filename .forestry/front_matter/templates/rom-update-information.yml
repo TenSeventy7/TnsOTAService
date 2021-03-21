@@ -1,0 +1,58 @@
+---
+label: ROM Update Information
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: number
+  name: buildVersion
+  label: buildVersion
+- type: text
+  name: releaseVersion
+  label: releaseVersion
+- type: text
+  name: releaseVariant
+  label: releaseVariant
+- type: datetime
+  name: publishDate
+  label: publishDate
+- type: datetime
+  name: creationDate
+  label: creationDate
+- type: field_group
+  name: android
+  label: android
+  fields:
+  - type: text
+    name: version
+    label: version
+  - type: datetime
+    name: spl
+    label: spl
+- type: field_group
+  name: delta
+  label: delta
+  fields:
+  - type: text
+    name: packageUrl
+    label: packageUrl
+  - type: number
+    name: packageSize
+    label: packageSize
+  - type: text
+    name: packageHash
+    label: packageHash
+- type: field_group
+  name: full
+  label: full
+  fields:
+  - type: text
+    name: packageUrl
+    label: packageUrl
+  - type: number
+    name: packageSize
+    label: packageSize
+  - type: text
+    name: packageHash
+    label: packageHash
