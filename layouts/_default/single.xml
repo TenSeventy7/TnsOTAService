@@ -15,6 +15,8 @@
   {{ with .FirstSection.Params.urls.gitIssues }}<GitIssues>{{ . }}</GitIssues>{{ end }}
   {{ with .FirstSection.Params.urls.gitDiscussion }}<GitDiscussion>{{ . }}</GitDiscussion>{{ end }}
   {{ if .Site.Params.donateUrl }}<DonateURL>{{ . }}</DonateURL>{{else}}<DonateURL nil="true" />{{ end }}
+  <Developer nil="true" />
+  <HttpUrl nil="true" />
 
   <Addons>    
     <AddonCount>{{ $addonCount }}</AddonCount>
@@ -45,5 +47,4 @@
   <CheckMD5>{{ .Params.delta.packageHash }}</CheckMD5>
 
   <Changelog>{{ .RawContent }}</Changelog>
-  <Developer nil="true" />
 {{ end }}
