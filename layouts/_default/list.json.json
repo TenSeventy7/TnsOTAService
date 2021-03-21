@@ -37,7 +37,7 @@
           "release_variant": "{{ .Params.releaseVariant }}",
           "slug": "{{ .Params.buildVersion }}",
           "android_version": "{{ .Params.android.version }}",
-          {{ with .Params.android.spl }}"android_spl": "{{ .Format "2006-01-02" }}",{{ end }}
+          {{ with .Params.android.spl }}"android_spl": "{{ dateFormat "2006-01-02" . }}",{{ end }}
           "changelog": {{ replace (.Plain) "\n" "\n\n" | jsonify | safeJS }},
           {{ with .Params.publishDate }}"published_at": "{{ .Format "2006-01-02" }}",{{ end }}
           {{ with .CurrentSection.Params.creationDate }}"created_at": "{{ .Format "2006-01-02" }}",{{ end }}
