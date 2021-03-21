@@ -1,6 +1,6 @@
 +++
 creationDate = 2021-02-01T00:00:00Z
-description = "Fresh Samsung Experience"
+description = "Fresh Samsung Experiences"
 id = "fresh"
 releaseType = "Official"
 title = "Fresh"

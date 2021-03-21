@@ -1,19 +1,19 @@
 {{ define "otaResponse" }}{{ $.Scratch.Set "addonCounter" 0 }}{{ $.Scratch.Set "releaseCounter" 0 }}"rom": {
     "id": 1,
-    "name": "{{ .Title }}",
-    "slug": "{{ .Params.id }}",
-    "description": "{{ .Params.description }}",
-    "releaseType": "{{ .Params.releaseType }}",
-    {{ with .Params.publishDate }}"published_at": "{{ .Format "2006-01-02" }}",{{ end }}
-    {{ with .Params.creationDate }}"created_at": "{{ .Format "2006-01-02" }}",{{ end }}
+    "name": "{{ .FirstSection.Title }}",
+    "slug": "{{ .FirstSection.Params.id }}",
+    "description": "{{ .FirstSection.Params.description }}",
+    "releaseType": "{{ .FirstSection.Params.releaseType }}",
+    {{ with .FirstSection.Params.publishDate }}"published_at": "{{ .Format "2006-01-02" }}",{{ end }}
+    {{ with .FirstSection.Params.creationDate }}"created_at": "{{ .Format "2006-01-02" }}",{{ end }}
     "downloads": 10,
-    {{ with .Params.urls.forum }}"website_url": {{ . | jsonify}},{{ end }}
-    {{ with .Params.urls.forum }}"forum_url": {{ . | jsonify}},{{ end }}
-    {{ with .Params.urls.discord }}"discord_url": {{ . | jsonify}},{{ end }}
-    {{ with .Params.urls.gitIssues }}"git_issues_url": {{ . | jsonify}},{{ end }}
-    {{ with .Params.urls.gitDiscussion }}"git_discussions_url": {{ . | jsonify}},{{ end }}
+    {{ with .FirstSection.Params.urls.forum }}"website_url": {{ . | jsonify}},{{ end }}
+    {{ with .FirstSection.Params.urls.forum }}"forum_url": {{ . | jsonify}},{{ end }}
+    {{ with .FirstSection.Params.urls.discord }}"discord_url": {{ . | jsonify}},{{ end }}
+    {{ with .FirstSection.Params.urls.gitIssues }}"git_issues_url": {{ . | jsonify}},{{ end }}
+    {{ with .FirstSection.Params.urls.gitDiscussion }}"git_discussions_url": {{ . | jsonify}},{{ end }}
     {{ with .Site.Params.donateUrl }}"donate_url": {{ . | jsonify }},{{ end }}
-    "addons": [{{ range $index, $e := (where (where $.Site.RegularPages "Section" "addons" ) "Params.rom" (.Params.id)) }}{{ $.Scratch.Set "addonCounter" (add ($.Scratch.Get "addonCounter") 1) }}{{ if $index  }}, {{ end }}{
+    "addons": [{{ range $index, $e := (where (where $.Site.RegularPages "Section" "addons" ) "Params.rom" (.FirstSection.Params.id)) }}{{ $.Scratch.Set "addonCounter" (add ($.Scratch.Get "addonCounter") 1) }}{{ if $index  }}, {{ end }}{
         "addon": {
           "id": {{ (add ($.Scratch.Get "addonCounter") 400000)}},
           "name": "{{ .Title }}",
@@ -32,7 +32,7 @@
     "versions": [{{ range $index, $e := .Pages }}{{ $.Scratch.Set "releaseCounter" (add ($.Scratch.Get "releaseCounter") 1) }}{{ if $index  }}, {{ end }}{
         "version": {
           "id": {{ (add ($.Scratch.Get "releaseCounter") 100000)}},
-          "full_name": {{ print .CurrentSection.Params.title " " .Params.releaseVersion " " .Params.releaseVariant | jsonify}},
+          "full_name": {{ print .FirstSection.Params.title " " .Params.releaseVersion " " .Params.releaseVariant | jsonify}},
           "release_version": "{{ .Params.releaseVersion }}",
           "release_variant": "{{ .Params.releaseVariant }}",
           "slug": "{{ .Params.buildVersion }}",
@@ -40,7 +40,7 @@
           {{ with .Params.android.spl }}"android_spl": "{{ dateFormat "2006-01-02" . }}",{{ end }}
           "changelog": {{ replace (.Plain) "\n" "\n\n" | jsonify | safeJS }},
           {{ with .Params.publishDate }}"published_at": "{{ .Format "2006-01-02" }}",{{ end }}
-          {{ with .CurrentSection.Params.creationDate }}"created_at": "{{ .Format "2006-01-02" }}",{{ end }}
+          {{ with .FirstSection.Params.creationDate }}"created_at": "{{ .Format "2006-01-02" }}",{{ end }}
           "downloads": 10,
           "version_number": {{ .Params.buildVersion }},
           "full_upload": {
