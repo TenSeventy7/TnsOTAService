@@ -40,7 +40,7 @@
           {{ with .Params.android.spl }}"android_spl": "{{ .Format "2006-01-02" }}",{{ end }}
           "changelog": {{ replace (.Plain) "\n" "\n\n" | jsonify | safeJS }},
           {{ with .Params.publishDate }}"published_at": "{{ .Format "2006-01-02" }}",{{ end }}
-          {{ with .Params.creationDate }}"created_at": "{{ .Format "2006-01-02" }}",{{ end }}
+          {{ with .CurrentSection.Params.creationDate }}"created_at": "{{ .Format "2006-01-02" }}",{{ end }}
           "downloads": 10,
           "version_number": {{ .Params.buildVersion }},
           "full_upload": {
