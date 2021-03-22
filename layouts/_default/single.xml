@@ -8,6 +8,7 @@
   <VersionName>{{ print .FirstSection.Params.title " " .Params.releaseVersion " " .Params.releaseVariant }}</VersionName>
   <ReleaseVersion>{{ .Params.releaseVersion }}</ReleaseVersion>
   <ReleaseVariant>{{ .Params.releaseVariant }}</ReleaseVariant>
+
   {{ with .CurrentSection.Params.urls.forum }}<WebsiteURL>{{ . }}</WebsiteURL>{{ end }}
   {{ with .CurrentSection.Params.urls.forum }}<ForumURL>{{ . }}</ForumURL>{{ end }}
   {{ with .FirstSection.Params.urls.discord }}<DiscordURL>{{ . }}</DiscordURL>{{ end }}
@@ -16,21 +17,34 @@
   {{ if .Site.Params.donateUrl }}<DonateURL>{{ . }}</DonateURL>{{else}}<DonateURL nil="true" />{{ end }}
   <Developer nil="true" />
   <HttpUrl nil="true" />
-  <AddonCount>{{ $addonCount }}</AddonCount>
-  <AddonsManifest>{{ .Site.BaseURL }}addons/{{ .FirstSection.Params.id }}/</AddonsManifest>
-  <AddonsURL>{{ .Site.BaseURL }}addons/{{ .FirstSection.Params.id }}/</AddonsURL>
-  <Android>{{ .Params.android.version }}</Android>
-  {{ with .Params.android.sesl }}<SemUi>{{ . }}</SemUi>{{ end }}
-  {{ with .Params.android.spl }}<AndroidSpl>{{ dateFormat "2006-01-02" . }}</AndroidSpl>{{ end }}
-  <DeltaPackageUrl>{{ .Params.delta.packageUrl }}</DeltaPackageUrl>
-  <DeltaPackageSize type="integer">{{ .Params.delta.packageSize }}</DeltaPackageSize>
-  <DeltaPackageHash>{{ .Params.delta.packageHash }}</DeltaPackageHash>
-  <FullPackageUrl>{{ .Params.full.packageUrl }}</FullPackageUrl>
-  <FullPackageSize type="integer">{{ .Params.full.packageSize }}</FullPackageSize>
-  <FullPackageHash>{{ .Params.full.packageHash }}</FullPackageHash>
+
+  <Addons>    
+    <AddonCount>{{ $addonCount }}</AddonCount>
+    <AddonsManifest>{{ .Site.BaseURL }}addons/{{ .FirstSection.Params.id }}/</AddonsManifest>
+    <AddonsURL>{{ .Site.BaseURL }}addons/{{ .FirstSection.Params.id }}/</AddonsURL>
+  </Addons>
+
+  <System>
+    <Android>{{ .Params.android.version }}</Android>
+    {{ with .Params.android.sesl }}<Sesl>{{ . }}</Sesl>{{ end }}
+    {{ with .Params.android.spl }}<SPL>{{ dateFormat "2006-01-02" . }}</SPL>{{ end }}
+  </System>
+
+  <DeltaPackage>
+    <DeltaPackageUrl>{{ .Params.delta.packageUrl }}</DeltaPackageUrl>
+    <DeltaPackageSize type="integer">{{ .Params.delta.packageSize }}</DeltaPackageSize>
+    <DeltaPackageHash>{{ .Params.delta.packageHash }}</DeltaPackageHash>
+  </DeltaPackage>
+
+  <FullPackage>
+    <FullPackageUrl>{{ .Params.full.packageUrl }}</FullPackageUrl>
+    <FullPackageSize type="integer">{{ .Params.full.packageSize }}</FullPackageSize>
+    <FullPackageHash>{{ .Params.full.packageHash }}</FullPackageHash>
+  </FullPackage>
 
   <DirectUrl>{{ .Params.delta.packageUrl }}</DirectUrl>
   <FileSize type="integer">{{ .Params.delta.packageSize }}</FileSize>
   <CheckMD5>{{ .Params.delta.packageHash }}</CheckMD5>
+
   <Changelog>{{ .RawContent }}</Changelog>
 {{ end }}
