@@ -2,12 +2,8 @@
 label: Update Information
 hide_body: false
 fields:
-- type: text
-  name: title
-  label: Title
-  description: Title of the release.
 - type: number
-  name: buildVersion
+  name: title
   label: Build Version
   description: Numerical Build version of the release. <strong>Must be higher than
     current release!</strong>
