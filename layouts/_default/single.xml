@@ -3,8 +3,8 @@
   {{ $addonCount := len $addons }}
   <RomName>{{ print .FirstSection.Params.title }}</RomName>
   <Release type="integer">2</Release>
-  <BuildVersion type="integer">{{ .Title }}</BuildVersion>
-  <VersionNumber type="integer">{{ .Title }}</VersionNumber>
+  <BuildVersion type="integer">3</BuildVersion>
+  <VersionNumber type="integer">3</VersionNumber>
   <VersionName>{{ print .FirstSection.Params.title " " .Params.releaseVersion " " .Params.releaseVariant }}</VersionName>
   <ReleaseVersion>{{ .Params.releaseVersion }}</ReleaseVersion>
   <ReleaseVariant>{{ .Params.releaseVariant }}</ReleaseVariant>
@@ -46,5 +46,7 @@
   <FileSize type="integer">{{ .Params.delta.packageSize }}</FileSize>
   <CheckMD5>{{ .Params.delta.packageHash }}</CheckMD5>
 
-  <Changelog>{{ .RawContent }}</Changelog>
+  <Changelog>
+    {{ .RawContent }}
+  </Changelog>
 {{ end }}
