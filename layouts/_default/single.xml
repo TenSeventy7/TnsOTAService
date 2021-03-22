@@ -23,124 +23,134 @@
   {{ with .Next }}
   {{ with .Next }}
   {{ range first 1 .CurrentSection.Pages }}
-  <BuildVersion type="integer">{{ .Title }}</BuildVersion>
-  <VersionNumber type="integer">{{ .Title }}</VersionNumber>
-  <VersionName>{{ print .FirstSection.Params.title " " .Params.releaseVersion " " .Params.releaseVariant }}</VersionName>
-  <ReleaseVersion>{{ .Params.releaseVersion }}</ReleaseVersion>
-  <ReleaseVariant>{{ .Params.releaseVariant }}</ReleaseVariant>
-
   <System>
     <Android>{{ .Params.android.version }}</Android>
     {{ with .Params.android.sesl }}<Sesl>{{ . }}</Sesl>{{ end }}
     {{ with .Params.android.spl }}<SPL>{{ dateFormat "2006-01-02" . }}</SPL>{{ end }}
   </System>
-  
-  <Package>
-    <DirectUrl>{{ .Params.full.packageUrl }}</DirectUrl>
-    <FileSize type="integer">{{ .Params.full.packageSize }}</FileSize>
-    <CheckMD5>{{ .Params.full.packageHash }}</CheckMD5>
-  </Package>
 
-  <Changelog>
-    {{ .RawContent }}
-  </Changelog>
+  <Build>
+    <BuildVersion type="integer">{{ .Title }}</BuildVersion>
+    <VersionNumber type="integer">{{ .Title }}</VersionNumber>
+    <VersionName>{{ print .FirstSection.Params.title " " .Params.releaseVersion " " .Params.releaseVariant }}</VersionName>
+    <ReleaseVersion>{{ .Params.releaseVersion }}</ReleaseVersion>
+    <ReleaseVariant>{{ .Params.releaseVariant }}</ReleaseVariant>
+  
+    <Package>
+      <DirectUrl>{{ .Params.full.packageUrl }}</DirectUrl>
+      <FileSize type="integer">{{ .Params.full.packageSize }}</FileSize>
+      <CheckMD5>{{ .Params.full.packageHash }}</CheckMD5>
+    </Package>
+
+    <Changelog>
+      {{ .RawContent }}
+    </Changelog>
+  </Build>
   {{ end }}
   {{ else }}
   {{ with .Prev }}
   {{ with .Prev }}
-  <BuildVersion type="integer">{{ .Title }}</BuildVersion>
-  <VersionNumber type="integer">{{ .Title }}</VersionNumber>
-  <VersionName>{{ print .FirstSection.Params.title " " .Params.releaseVersion " " .Params.releaseVariant }}</VersionName>
-  <ReleaseVersion>{{ .Params.releaseVersion }}</ReleaseVersion>
-  <ReleaseVariant>{{ .Params.releaseVariant }}</ReleaseVariant>
-  
   <System>
     <Android>{{ .Params.android.version }}</Android>
     {{ with .Params.android.sesl }}<Sesl>{{ . }}</Sesl>{{ end }}
     {{ with .Params.android.spl }}<SPL>{{ dateFormat "2006-01-02" . }}</SPL>{{ end }}
   </System>
 
-  <Package>
-    <DirectUrl>{{ .Params.delta.packageUrl }}</DirectUrl>
-    <FileSize type="integer">{{ .Params.delta.packageSize }}</FileSize>
-    <CheckMD5>{{ .Params.delta.packageHash }}</CheckMD5>
-  </Package>
+  <Build>
+    <BuildVersion type="integer">{{ .Title }}</BuildVersion>
+    <VersionNumber type="integer">{{ .Title }}</VersionNumber>
+    <VersionName>{{ print .FirstSection.Params.title " " .Params.releaseVersion " " .Params.releaseVariant }}</VersionName>
+    <ReleaseVersion>{{ .Params.releaseVersion }}</ReleaseVersion>
+    <ReleaseVariant>{{ .Params.releaseVariant }}</ReleaseVariant>
+  
+    <Package>
+      <DirectUrl>{{ .Params.full.packageUrl }}</DirectUrl>
+      <FileSize type="integer">{{ .Params.full.packageSize }}</FileSize>
+      <CheckMD5>{{ .Params.full.packageHash }}</CheckMD5>
+    </Package>
 
-  <Changelog>
-    {{ .RawContent }}
-  </Changelog>
+    <Changelog>
+      {{ .RawContent }}
+    </Changelog>
+  </Build>
   {{ end }}
   {{ end }}
   {{ end }}
   {{ else }}
   {{ with .Prev }}
-  <BuildVersion type="integer">{{ .Title }}</BuildVersion>
-  <VersionNumber type="integer">{{ .Title }}</VersionNumber>
-  <VersionName>{{ print .FirstSection.Params.title " " .Params.releaseVersion " " .Params.releaseVariant }}</VersionName>
-  <ReleaseVersion>{{ .Params.releaseVersion }}</ReleaseVersion>
-  <ReleaseVariant>{{ .Params.releaseVariant }}</ReleaseVariant>
-  
   <System>
     <Android>{{ .Params.android.version }}</Android>
     {{ with .Params.android.sesl }}<Sesl>{{ . }}</Sesl>{{ end }}
     {{ with .Params.android.spl }}<SPL>{{ dateFormat "2006-01-02" . }}</SPL>{{ end }}
   </System>
 
-  <Package>
-    <DirectUrl>{{ .Params.delta.packageUrl }}</DirectUrl>
-    <FileSize type="integer">{{ .Params.delta.packageSize }}</FileSize>
-    <CheckMD5>{{ .Params.delta.packageHash }}</CheckMD5>
-  </Package>
+  <Build>
+    <BuildVersion type="integer">{{ .Title }}</BuildVersion>
+    <VersionNumber type="integer">{{ .Title }}</VersionNumber>
+    <VersionName>{{ print .FirstSection.Params.title " " .Params.releaseVersion " " .Params.releaseVariant }}</VersionName>
+    <ReleaseVersion>{{ .Params.releaseVersion }}</ReleaseVersion>
+    <ReleaseVariant>{{ .Params.releaseVariant }}</ReleaseVariant>
+  
+    <Package>
+      <DirectUrl>{{ .Params.full.packageUrl }}</DirectUrl>
+      <FileSize type="integer">{{ .Params.full.packageSize }}</FileSize>
+      <CheckMD5>{{ .Params.full.packageHash }}</CheckMD5>
+    </Package>
 
-  <Changelog>
-    {{ .RawContent }}
-  </Changelog>
+    <Changelog>
+      {{ .RawContent }}
+    </Changelog>
+  </Build>
   {{ end }}
   {{ end }}
   {{ else }}
-  <BuildVersion type="integer">{{ .Title }}</BuildVersion>
-  <VersionNumber type="integer">{{ .Title }}</VersionNumber>
-  <VersionName>{{ print .FirstSection.Params.title " " .Params.releaseVersion " " .Params.releaseVariant }}</VersionName>
-  <ReleaseVersion>{{ .Params.releaseVersion }}</ReleaseVersion>
-  <ReleaseVariant>{{ .Params.releaseVariant }}</ReleaseVariant>
-  
   <System>
     <Android>{{ .Params.android.version }}</Android>
     {{ with .Params.android.sesl }}<Sesl>{{ . }}</Sesl>{{ end }}
     {{ with .Params.android.spl }}<SPL>{{ dateFormat "2006-01-02" . }}</SPL>{{ end }}
   </System>
 
-  <Package>
-    <DirectUrl>{{ .Params.delta.packageUrl }}</DirectUrl>
-    <FileSize type="integer">{{ .Params.delta.packageSize }}</FileSize>
-    <CheckMD5>{{ .Params.delta.packageHash }}</CheckMD5>
-  </Package>
+  <Build>
+    <BuildVersion type="integer">{{ .Title }}</BuildVersion>
+    <VersionNumber type="integer">{{ .Title }}</VersionNumber>
+    <VersionName>{{ print .FirstSection.Params.title " " .Params.releaseVersion " " .Params.releaseVariant }}</VersionName>
+    <ReleaseVersion>{{ .Params.releaseVersion }}</ReleaseVersion>
+    <ReleaseVariant>{{ .Params.releaseVariant }}</ReleaseVariant>
+  
+    <Package>
+      <DirectUrl>{{ .Params.full.packageUrl }}</DirectUrl>
+      <FileSize type="integer">{{ .Params.full.packageSize }}</FileSize>
+      <CheckMD5>{{ .Params.full.packageHash }}</CheckMD5>
+    </Package>
 
-  <Changelog>
-    {{ .RawContent }}
-  </Changelog>
+    <Changelog>
+      {{ .RawContent }}
+    </Changelog>
+  </Build>
   {{ end }}
   {{ else }}
-  <BuildVersion type="integer">{{ .Title }}</BuildVersion>
-  <VersionNumber type="integer">{{ .Title }}</VersionNumber>
-  <VersionName>{{ print .FirstSection.Params.title " " .Params.releaseVersion " " .Params.releaseVariant }}</VersionName>
-  <ReleaseVersion>{{ .Params.releaseVersion }}</ReleaseVersion>
-  <ReleaseVariant>{{ .Params.releaseVariant }}</ReleaseVariant>
-  
   <System>
     <Android>{{ .Params.android.version }}</Android>
     {{ with .Params.android.sesl }}<Sesl>{{ . }}</Sesl>{{ end }}
     {{ with .Params.android.spl }}<SPL>{{ dateFormat "2006-01-02" . }}</SPL>{{ end }}
   </System>
 
-  <Package>
-    <DirectUrl>{{ .Params.delta.packageUrl }}</DirectUrl>
-    <FileSize type="integer">{{ .Params.delta.packageSize }}</FileSize>
-    <CheckMD5>{{ .Params.delta.packageHash }}</CheckMD5>
-  </Package>
+  <Build>
+    <BuildVersion type="integer">{{ .Title }}</BuildVersion>
+    <VersionNumber type="integer">{{ .Title }}</VersionNumber>
+    <VersionName>{{ print .FirstSection.Params.title " " .Params.releaseVersion " " .Params.releaseVariant }}</VersionName>
+    <ReleaseVersion>{{ .Params.releaseVersion }}</ReleaseVersion>
+    <ReleaseVariant>{{ .Params.releaseVariant }}</ReleaseVariant>
+  
+    <Package>
+      <DirectUrl>{{ .Params.full.packageUrl }}</DirectUrl>
+      <FileSize type="integer">{{ .Params.full.packageSize }}</FileSize>
+      <CheckMD5>{{ .Params.full.packageHash }}</CheckMD5>
+    </Package>
 
-  <Changelog>
-    {{ .RawContent }}
-  </Changelog>
+    <Changelog>
+      {{ .RawContent }}
+    </Changelog>
+  </Build>
   {{ end }}
 {{ end }}
