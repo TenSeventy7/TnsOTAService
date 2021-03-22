@@ -43,6 +43,10 @@ fields:
     name: version
     label: Android Version
     description: Android version of the release.
+  - type: text
+    name: sesl
+    label: Samsung Experience/One UI Version
+    description: One UI version of the release.
   - type: datetime
     name: spl
     label: Security Patch Level
