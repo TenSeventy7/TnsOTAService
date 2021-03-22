@@ -10,6 +10,8 @@ fields:
   config:
     required: true
     step: 1
+    min: 
+    max: 2147483647
 - type: text
   name: releaseVersion
   label: Release Version
@@ -73,6 +75,8 @@ fields:
     description: Size of the update package.
     config:
       required: true
+      min: 
+      max: 2147483647
   - type: text
     name: packageHash
     label: Package Hash
@@ -96,6 +100,7 @@ fields:
     description: Size of the update package.
     config:
       required: true
+      max: 2147483647
   - type: text
     name: packageHash
     label: Package Hash
