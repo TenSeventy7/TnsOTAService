@@ -37,7 +37,11 @@
     <ReleaseVariant>{{ .Params.releaseVariant }}</ReleaseVariant>
   
     <Package>
+      {{ if .Params.full.noMirror }}
       <DirectUrl>{{ .Params.full.packageUrl }}</DirectUrl>
+      {{ else }}
+      <DirectUrl>https://{{ .Site.Params.mirrorCode }}.dl.sourceforge.net/project/freshroms/{{ .Params.full.packageUrl }}</DirectUrl>
+      {{ end }}
       <FileSize type="integer">{{ .Params.full.packageSize }}</FileSize>
       <CheckMD5>{{ .Params.full.packageHash }}</CheckMD5>
     </Package>
@@ -64,9 +68,13 @@
     <ReleaseVariant>{{ .Params.releaseVariant }}</ReleaseVariant>
   
     <Package>
-      <DirectUrl>{{ .Params.full.packageUrl }}</DirectUrl>
-      <FileSize type="integer">{{ .Params.full.packageSize }}</FileSize>
-      <CheckMD5>{{ .Params.full.packageHash }}</CheckMD5>
+      {{ if .Params.delta.noMirror }}
+      <DirectUrl>{{ .Params.delta.packageUrl }}</DirectUrl>
+      {{ else }}
+      <DirectUrl>https://{{ .Site.Params.mirrorCode }}.dl.sourceforge.net/project/freshroms/{{ .Params.delta.packageUrl }}</DirectUrl>
+      {{ end }}
+      <FileSize type="integer">{{ .Params.delta.packageSize }}</FileSize>
+      <CheckMD5>{{ .Params.delta.packageHash }}</CheckMD5>
     </Package>
 
     <Changelog>
@@ -92,9 +100,13 @@
     <ReleaseVariant>{{ .Params.releaseVariant }}</ReleaseVariant>
   
     <Package>
-      <DirectUrl>{{ .Params.full.packageUrl }}</DirectUrl>
-      <FileSize type="integer">{{ .Params.full.packageSize }}</FileSize>
-      <CheckMD5>{{ .Params.full.packageHash }}</CheckMD5>
+      {{ if .Params.delta.noMirror }}
+      <DirectUrl>{{ .Params.delta.packageUrl }}</DirectUrl>
+      {{ else }}
+      <DirectUrl>https://{{ .Site.Params.mirrorCode }}.dl.sourceforge.net/project/freshroms/{{ .Params.delta.packageUrl }}</DirectUrl>
+      {{ end }}
+      <FileSize type="integer">{{ .Params.delta.packageSize }}</FileSize>
+      <CheckMD5>{{ .Params.delta.packageHash }}</CheckMD5>
     </Package>
 
     <Changelog>
@@ -118,9 +130,13 @@
     <ReleaseVariant>{{ .Params.releaseVariant }}</ReleaseVariant>
   
     <Package>
-      <DirectUrl>{{ .Params.full.packageUrl }}</DirectUrl>
-      <FileSize type="integer">{{ .Params.full.packageSize }}</FileSize>
-      <CheckMD5>{{ .Params.full.packageHash }}</CheckMD5>
+      {{ if .Params.delta.noMirror }}
+      <DirectUrl>{{ .Params.delta.packageUrl }}</DirectUrl>
+      {{ else }}
+      <DirectUrl>https://{{ .Site.Params.mirrorCode }}.dl.sourceforge.net/project/freshroms/{{ .Params.delta.packageUrl }}</DirectUrl>
+      {{ end }}
+      <FileSize type="integer">{{ .Params.delta.packageSize }}</FileSize>
+      <CheckMD5>{{ .Params.delta.packageHash }}</CheckMD5>
     </Package>
 
     <Changelog>
@@ -143,9 +159,13 @@
     <ReleaseVariant>{{ .Params.releaseVariant }}</ReleaseVariant>
   
     <Package>
-      <DirectUrl>{{ .Params.full.packageUrl }}</DirectUrl>
-      <FileSize type="integer">{{ .Params.full.packageSize }}</FileSize>
-      <CheckMD5>{{ .Params.full.packageHash }}</CheckMD5>
+      {{ if .Params.delta.noMirror }}
+      <DirectUrl>{{ .Params.delta.packageUrl }}</DirectUrl>
+      {{ else }}
+      <DirectUrl>https://{{ .Site.Params.mirrorCode }}.dl.sourceforge.net/project/freshroms/{{ .Params.delta.packageUrl }}</DirectUrl>
+      {{ end }}
+      <FileSize type="integer">{{ .Params.delta.packageSize }}</FileSize>
+      <CheckMD5>{{ .Params.delta.packageHash }}</CheckMD5>
     </Package>
 
     <Changelog>

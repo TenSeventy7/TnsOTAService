@@ -7,8 +7,14 @@
 	    <name>{{ .Title }}</name>
 	    <description>{{ replace (.Plain) "\n" " " }}</description>
 	    {{ with .Params.publishDate }}<updated-at>{{ .Format "2006-01-02" }}</updated-at>{{ end }}
-	    <size type="integer">{{ .Params.addon.packageSize }}</size>
-	    <download-link>{{ .Params.addon.packageUrl }}</download-link>
+	    <Package>
+		    <size type="integer">{{ .Params.addon.packageSize }}</size>
+		    {{ if .Params.addon.noMirror }}
+		    <download-link>{{ .Params.addon.packageUrl }}</download-link>
+		    {{ else }}
+		    <download-link>https://{{ .Site.Params.mirrorCode }}.dl.sourceforge.net/project/freshroms/{{ .Params.addon.packageUrl }}</download-link>
+	    </Package>
+	    {{ end }}
 	</addon>
   {{ end }}
 {{ end }}
