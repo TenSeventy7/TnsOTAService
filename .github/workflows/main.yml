@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Netlify Deploy
 
 # Controls when the action will run. 
 on:
@@ -21,26 +21,44 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Publish on SEA Server
+      - shell: bash
+        env:
+          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY_SEA }}
         run: |
-          curl -X POST -d {} https://api.netlify.com/build_hooks/605ae356e82023ab385e3573
+          curl -X POST -d {} https://api.netlify.com/build_hooks/${DEPLOY_KEY}
           
       - name: Publish on Europe Server
+      - shell: bash
+        env:
+          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY_CHILE }}
         run: |
-          curl -X POST -d {} https://api.netlify.com/build_hooks/605ae35a2779d1aa94062d31
+          curl -X POST -d {} https://api.netlify.com/build_hooks/${DEPLOY_KEY}
 
       - name: Publish on Chile Server
+      - shell: bash
+        env:
+          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY_TURKEY }}
         run: |
-          curl -X POST -d {} https://api.netlify.com/build_hooks/605ae33d66d0e1ae71ac4598
+          curl -X POST -d {} https://api.netlify.com/build_hooks/${DEPLOY_KEY}
 
       - name: Publish on Amsterdam Server
+      - shell: bash
+        env:
+          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY_RUSSIA }}
         run: |
-          curl -X POST -d {} https://api.netlify.com/build_hooks/605ae3511a1822a6f9a3d005
+          curl -X POST -d {} https://api.netlify.com/build_hooks/${DEPLOY_KEY}
 
       - name: Publish on India Server
+      - shell: bash
+        env:
+          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY_INDIA }}
         run: |
-          curl -X POST -d {} https://api.netlify.com/build_hooks/605ae34b31c8a2b4ba679aff
+          curl -X POST -d {} https://api.netlify.com/build_hooks/${DEPLOY_KEY}
 
       - name: Publish on Global Server
+      - shell: bash
+        env:
+          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY_GLOBAL }}
         run: |
-          curl -X POST -d {} https://api.netlify.com/build_hooks/605ae3434f04df9888fda160
+          curl -X POST -d {} https://api.netlify.com/build_hooks/${DEPLOY_KEY}
 
