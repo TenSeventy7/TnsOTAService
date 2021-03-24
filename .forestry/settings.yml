@@ -11,11 +11,14 @@ sections:
   match: "**/*"
   templates:
   - update-information
+  - rom-information
 - type: directory
   path: content/addons
   label: Addons
   create: all
   match: "**/*"
+  templates:
+  - addon-information
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
