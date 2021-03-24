@@ -21,42 +21,42 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Publish on SEA Server
-      - shell: bash
+        shell: bash
         env:
           DEPLOY_KEY: ${{ secrets.DEPLOY_KEY_SEA }}
         run: |
           curl -X POST -d {} https://api.netlify.com/build_hooks/${DEPLOY_KEY}
           
       - name: Publish on Europe Server
-      - shell: bash
+        shell: bash
         env:
           DEPLOY_KEY: ${{ secrets.DEPLOY_KEY_CHILE }}
         run: |
           curl -X POST -d {} https://api.netlify.com/build_hooks/${DEPLOY_KEY}
 
       - name: Publish on Chile Server
-      - shell: bash
+        shell: bash
         env:
           DEPLOY_KEY: ${{ secrets.DEPLOY_KEY_TURKEY }}
         run: |
           curl -X POST -d {} https://api.netlify.com/build_hooks/${DEPLOY_KEY}
 
       - name: Publish on Amsterdam Server
-      - shell: bash
+        shell: bash
         env:
           DEPLOY_KEY: ${{ secrets.DEPLOY_KEY_RUSSIA }}
         run: |
           curl -X POST -d {} https://api.netlify.com/build_hooks/${DEPLOY_KEY}
 
       - name: Publish on India Server
-      - shell: bash
+        shell: bash
         env:
           DEPLOY_KEY: ${{ secrets.DEPLOY_KEY_INDIA }}
         run: |
           curl -X POST -d {} https://api.netlify.com/build_hooks/${DEPLOY_KEY}
 
       - name: Publish on Global Server
-      - shell: bash
+        shell: bash
         env:
           DEPLOY_KEY: ${{ secrets.DEPLOY_KEY_GLOBAL }}
         run: |
