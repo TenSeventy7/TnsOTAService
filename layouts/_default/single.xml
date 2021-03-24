@@ -2,6 +2,7 @@
   {{ $addons := (where (where $.Site.RegularPages "Section" "addons" ) "Params.rom" (.FirstSection.Params.id)) }}
   {{ $addonCount := len $addons }}
   <RomName>{{ print .FirstSection.Params.title }}</RomName>
+  <Developer>TenSeventy7 and the Fresh Community</Developer>
   <Release type="integer">2</Release>
   {{ with .CurrentSection.Params.urls.forum }}<WebsiteURL>{{ . }}</WebsiteURL>{{ end }}
   {{ with .CurrentSection.Params.urls.forum }}<ForumURL>{{ . }}</ForumURL>{{ end }}
@@ -9,161 +10,63 @@
   {{ with .FirstSection.Params.urls.gitIssues }}<GitIssues>{{ . }}</GitIssues>{{ end }}
   {{ with .FirstSection.Params.urls.gitDiscussion }}<GitDiscussion>{{ . }}</GitDiscussion>{{ end }}
   {{ if .Site.Params.donateUrl }}<DonateURL>{{ . }}</DonateURL>{{else}}<DonateURL nil="true" />{{ end }}
-  <Developer nil="true" />
-  <HttpUrl nil="true" />
 
+  {{ if gt $addonCount 0 }}
   <Addons>    
     <AddonCount>{{ $addonCount }}</AddonCount>
     <AddonsManifest>{{ .Site.BaseURL }}addons/{{ .FirstSection.Params.id }}/</AddonsManifest>
     <AddonsURL>{{ .Site.BaseURL }}addons/{{ .FirstSection.Params.id }}/</AddonsURL>
   </Addons>
+  {{ end }}
 
   {{ with .NextInSection }}
   {{ with .NextInSection }}
   {{ with .NextInSection }}
   {{ with .NextInSection }}
   {{ range first 1 .CurrentSection.Pages }}
-  <System>
-    <Android>{{ .Params.android.version }}</Android>
-    {{ with .Params.android.sesl }}<Sesl>{{ . }}</Sesl>{{ end }}
-    {{ with .Params.android.spl }}<SPL>{{ dateFormat "2006-01-02" . }}</SPL>{{ end }}
-  </System>
-
-  <Build>
-    <BuildVersion type="integer">{{ .Title }}</BuildVersion>
-    <VersionNumber type="integer">{{ .Title }}</VersionNumber>
-    <VersionName>{{ print .FirstSection.Params.title " " .Params.releaseVersion " " .Params.releaseVariant }}</VersionName>
-    <ReleaseVersion>{{ .Params.releaseVersion }}</ReleaseVersion>
-    <ReleaseVariant>{{ .Params.releaseVariant }}</ReleaseVariant>
-  
-    <Package>
-      {{ if .Params.full.noMirror }}
-      <DirectUrl>{{ .Params.full.packageUrl }}</DirectUrl>
-      {{ else }}
-      <DirectUrl>https://downloads.sourceforge.net/project/freshroms/{{ .Params.full.packageUrl }}</DirectUrl>
-      {{ end }}
-      <FileSize type="integer">{{ .Params.full.packageSize }}</FileSize>
-      <CheckMD5>{{ .Params.full.packageHash }}</CheckMD5>
-    </Package>
-
-    <Changelog>
-      {{ .RawContent }}
-    </Changelog>
-  </Build>
+  {{ block "update" . }}{{- end }}
   {{ end }}
   {{ else }}
   {{ with .PrevInSection }}
   {{ with .PrevInSection }}
-  <System>
-    <Android>{{ .Params.android.version }}</Android>
-    {{ with .Params.android.sesl }}<Sesl>{{ . }}</Sesl>{{ end }}
-    {{ with .Params.android.spl }}<SPL>{{ dateFormat "2006-01-02" . }}</SPL>{{ end }}
-  </System>
-
-  <Build>
-    <BuildVersion type="integer">{{ .Title }}</BuildVersion>
-    <VersionNumber type="integer">{{ .Title }}</VersionNumber>
-    <VersionName>{{ print .FirstSection.Params.title " " .Params.releaseVersion " " .Params.releaseVariant }}</VersionName>
-    <ReleaseVersion>{{ .Params.releaseVersion }}</ReleaseVersion>
-    <ReleaseVariant>{{ .Params.releaseVariant }}</ReleaseVariant>
-  
-    <Package>
-      {{ if .Params.delta.noMirror }}
-      <DirectUrl>{{ .Params.delta.packageUrl }}</DirectUrl>
-      {{ else }}
-      <DirectUrl>https://downloads.sourceforge.net/project/freshroms/{{ .Params.delta.packageUrl }}</DirectUrl>
-      {{ end }}
-      <FileSize type="integer">{{ .Params.delta.packageSize }}</FileSize>
-      <CheckMD5>{{ .Params.delta.packageHash }}</CheckMD5>
-    </Package>
-
-    <Changelog>
-      {{ .RawContent }}
-    </Changelog>
-  </Build>
+  {{ block "update" . }}{{- end }}
   {{ end }}
   {{ end }}
   {{ end }}
   {{ else }}
   {{ with .PrevInSection }}
-  <System>
-    <Android>{{ .Params.android.version }}</Android>
-    {{ with .Params.android.sesl }}<Sesl>{{ . }}</Sesl>{{ end }}
-    {{ with .Params.android.spl }}<SPL>{{ dateFormat "2006-01-02" . }}</SPL>{{ end }}
-  </System>
-
-  <Build>
-    <BuildVersion type="integer">{{ .Title }}</BuildVersion>
-    <VersionNumber type="integer">{{ .Title }}</VersionNumber>
-    <VersionName>{{ print .FirstSection.Params.title " " .Params.releaseVersion " " .Params.releaseVariant }}</VersionName>
-    <ReleaseVersion>{{ .Params.releaseVersion }}</ReleaseVersion>
-    <ReleaseVariant>{{ .Params.releaseVariant }}</ReleaseVariant>
-  
-    <Package>
-      {{ if .Params.delta.noMirror }}
-      <DirectUrl>{{ .Params.delta.packageUrl }}</DirectUrl>
-      {{ else }}
-      <DirectUrl>https://downloads.sourceforge.net/project/freshroms/{{ .Params.delta.packageUrl }}</DirectUrl>
-      {{ end }}
-      <FileSize type="integer">{{ .Params.delta.packageSize }}</FileSize>
-      <CheckMD5>{{ .Params.delta.packageHash }}</CheckMD5>
-    </Package>
-
-    <Changelog>
-      {{ .RawContent }}
-    </Changelog>
-  </Build>
+  {{ block "update" . }}{{- end }}
   {{ end }}
   {{ end }}
   {{ else }}
-  <System>
-    <Android>{{ .Params.android.version }}</Android>
-    {{ with .Params.android.sesl }}<Sesl>{{ . }}</Sesl>{{ end }}
-    {{ with .Params.android.spl }}<SPL>{{ dateFormat "2006-01-02" . }}</SPL>{{ end }}
-  </System>
-
-  <Build>
-    <BuildVersion type="integer">{{ .Title }}</BuildVersion>
-    <VersionNumber type="integer">{{ .Title }}</VersionNumber>
-    <VersionName>{{ print .FirstSection.Params.title " " .Params.releaseVersion " " .Params.releaseVariant }}</VersionName>
-    <ReleaseVersion>{{ .Params.releaseVersion }}</ReleaseVersion>
-    <ReleaseVariant>{{ .Params.releaseVariant }}</ReleaseVariant>
-  
-    <Package>
-      {{ if .Params.delta.noMirror }}
-      <DirectUrl>{{ .Params.delta.packageUrl }}</DirectUrl>
-      {{ else }}
-      <DirectUrl>https://downloads.sourceforge.net/project/freshroms/{{ .Params.delta.packageUrl }}</DirectUrl>
-      {{ end }}
-      <FileSize type="integer">{{ .Params.delta.packageSize }}</FileSize>
-      <CheckMD5>{{ .Params.delta.packageHash }}</CheckMD5>
-    </Package>
-
-    <Changelog>
-      {{ .RawContent }}
-    </Changelog>
-  </Build>
+  {{ block "update" . }}{{- end }}
   {{ end }}
   {{ else }}
+  {{ block "update" . }}{{- end }}
+  {{ end }}
+{{ end }}
+
+{{ define "update" }}
   <System>
     <Android>{{ .Params.android.version }}</Android>
-    {{ with .Params.android.sesl }}<Sesl>{{ . }}</Sesl>{{ end }}
+    {{ with .Params.android.sesl }}<SemVersion>{{ . }}</SemVersion>{{ end }}
     {{ with .Params.android.spl }}<SPL>{{ dateFormat "2006-01-02" . }}</SPL>{{ end }}
   </System>
 
   <Build>
-    <BuildVersion type="integer">{{ .Title }}</BuildVersion>
-    <VersionNumber type="integer">{{ .Title }}</VersionNumber>
     <VersionName>{{ print .FirstSection.Params.title " " .Params.releaseVersion " " .Params.releaseVariant }}</VersionName>
+    <BuildVersion type="integer">{{ .Title }}</BuildVersion>
     <ReleaseVersion>{{ .Params.releaseVersion }}</ReleaseVersion>
     <ReleaseVariant>{{ .Params.releaseVariant }}</ReleaseVariant>
-  
+
     <Package>
-      {{ if .Params.delta.noMirror }}
+    {{ if .Params.delta.noMirror }}
       <DirectUrl>{{ .Params.delta.packageUrl }}</DirectUrl>
-      {{ else }}
+      <HttpUrl>{{ .Params.delta.packageUrl }}</HttpUrl>
+    {{ else }}
       <DirectUrl>https://downloads.sourceforge.net/project/freshroms/{{ .Params.delta.packageUrl }}</DirectUrl>
-      {{ end }}
+      <HttpUrl>https://sourceforge.net/projects/freshroms/files/{{ .Params.delta.packageUrl }}</HttpUrl>q
+    {{ end }}
       <FileSize type="integer">{{ .Params.delta.packageSize }}</FileSize>
       <CheckMD5>{{ .Params.delta.packageHash }}</CheckMD5>
     </Package>
@@ -172,5 +75,4 @@
       {{ .RawContent }}
     </Changelog>
   </Build>
-  {{ end }}
 {{ end }}
