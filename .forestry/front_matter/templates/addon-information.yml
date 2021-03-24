@@ -74,3 +74,4 @@ fields:
   description: Information about the addon package.
 pages:
 - content/addons/fresh/quick-share.md
+- content/addons/fresh/samsung-game-services.md
