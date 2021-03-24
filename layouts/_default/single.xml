@@ -18,10 +18,10 @@
     <AddonsURL>{{ .Site.BaseURL }}addons/{{ .FirstSection.Params.id }}/</AddonsURL>
   </Addons>
 
-  {{ with .Next }}
-  {{ with .Next }}
-  {{ with .Next }}
-  {{ with .Next }}
+  {{ with .CurrentSection.Next }}
+  {{ with .CurrentSection.Next }}
+  {{ with .CurrentSection.Next }}
+  {{ with .CurrentSection.Next }}
   {{ range first 1 .CurrentSection.Pages }}
   <System>
     <Android>{{ .Params.android.version }}</Android>
