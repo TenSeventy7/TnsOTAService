@@ -18,10 +18,10 @@
     <AddonsURL>{{ .Site.BaseURL }}addons/{{ .FirstSection.Params.id }}/</AddonsURL>
   </Addons>
 
-  {{ with .CurrentSection.Next }}
-  {{ with .CurrentSection.Next }}
-  {{ with .CurrentSection.Next }}
-  {{ with .CurrentSection.Next }}
+  {{ with .NextInSection }}
+  {{ with .NextInSection }}
+  {{ with .NextInSection }}
+  {{ with .NextInSection }}
   {{ range first 1 .CurrentSection.Pages }}
   <System>
     <Android>{{ .Params.android.version }}</Android>
@@ -52,8 +52,8 @@
   </Build>
   {{ end }}
   {{ else }}
-  {{ with .Prev }}
-  {{ with .Prev }}
+  {{ with .PrevInSection }}
+  {{ with .PrevInSection }}
   <System>
     <Android>{{ .Params.android.version }}</Android>
     {{ with .Params.android.sesl }}<Sesl>{{ . }}</Sesl>{{ end }}
@@ -85,7 +85,7 @@
   {{ end }}
   {{ end }}
   {{ else }}
-  {{ with .Prev }}
+  {{ with .PrevInSection }}
   <System>
     <Android>{{ .Params.android.version }}</Android>
     {{ with .Params.android.sesl }}<Sesl>{{ . }}</Sesl>{{ end }}
