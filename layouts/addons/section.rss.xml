@@ -13,8 +13,8 @@
 		    <download-link>{{ .Params.addon.packageUrl }}</download-link>
 		    {{ else }}
 		    <download-link>https://{{ .Site.Params.mirrorCode }}.dl.sourceforge.net/project/freshroms/{{ .Params.addon.packageUrl }}</download-link>
+	    	{{ end }}
 	    </Package>
-	    {{ end }}
 	</addon>
   {{ end }}
 {{ end }}
