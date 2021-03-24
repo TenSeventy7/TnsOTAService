@@ -1,0 +1,46 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on push or pull request events but only for the ota_new branch
+  push:
+    branches: [ ota_new ]
+  pull_request:
+    branches: [ ota_new ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Publish on SEA Server
+        run: |
+          curl -X POST -d {} https://api.netlify.com/build_hooks/605ae356e82023ab385e3573
+          
+      - name: Publish on Europe Server
+        run: |
+          curl -X POST -d {} https://api.netlify.com/build_hooks/605ae35a2779d1aa94062d31
+
+      - name: Publish on Chile Server
+        run: |
+          curl -X POST -d {} https://api.netlify.com/build_hooks/605ae33d66d0e1ae71ac4598
+
+      - name: Publish on Amsterdam Server
+        run: |
+          curl -X POST -d {} https://api.netlify.com/build_hooks/605ae3511a1822a6f9a3d005
+
+      - name: Publish on India Server
+        run: |
+          curl -X POST -d {} https://api.netlify.com/build_hooks/605ae34b31c8a2b4ba679aff
+
+      - name: Publish on Global Server
+        run: |
+          curl -X POST -d {} https://api.netlify.com/build_hooks/605ae3434f04df9888fda160
+
