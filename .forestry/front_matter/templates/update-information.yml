@@ -63,10 +63,16 @@ fields:
   name: delta
   label: Delta Package
   fields:
+  - name: noMirror
+    type: boolean
+    label: Disable Mirroring
+    description: Disable mirroring of delta package. <strong>Full URL must be specified
+      if this is enabled!</strong>
   - type: text
     name: packageUrl
     label: Package URL
-    description: Direct URL of the package.
+    description: Direct URL of the package. <strong>Only specify file path from SourceForge
+      Files root if mirroring is enabled.</strong>
     config:
       required: true
   - type: number
@@ -88,12 +94,18 @@ fields:
   name: full
   label: Full Package
   fields:
+  - name: noMirror
+    type: boolean
+    description: Disable mirroring of full package. <strong>Full URL must be specified
+      if this is enabled!</strong>
+    label: Disable Mirroring
   - type: text
     name: packageUrl
     label: Package URL
     config:
       required: true
-    description: Direct URL of the package.
+    description: Direct URL of the package. <strong>Only specify file path from SourceForge
+      Files root if mirroring is enabled.</strong>
   - type: number
     name: packageSize
     label: Package Size

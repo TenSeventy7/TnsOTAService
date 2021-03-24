@@ -67,6 +67,4 @@ fields:
   label: Package Information
   description: Information about the addon package.
 pages:
-- content/addons/fresh/accuweather.md
 - content/addons/fresh/quick-share.md
-- content/addons/fresh/test-addon.md
