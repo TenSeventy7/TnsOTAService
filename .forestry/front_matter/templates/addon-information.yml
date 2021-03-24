@@ -46,10 +46,16 @@ fields:
 - type: field_group
   name: addon
   fields:
+  - name: noMirror
+    type: boolean
+    description: Disable mirroring of addon package. <strong>Full URL must be specified
+      if this is enabled!</strong>
+    label: Disable Mirroring
   - type: text
     name: packageUrl
     label: Package URL
-    description: URL of the addon package.
+    description: URL of the addon package. <strong>Only specify path from SourceForge
+      Files root if mirroring is enabled.</strong>
     config:
       required: true
   - type: number
