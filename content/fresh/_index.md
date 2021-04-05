@@ -6,7 +6,7 @@ releaseType = "Official"
 releaseVariant = "Stable"
 title = "Fresh"
 [urls]
-discord = ""
+discord = "https://discord.gg/qqygyDZxNK"
 forum = "https://github.com/FreshROMs/Fresh/issues"
 gitDiscussion = "https://github.com/FreshROMs/Fresh/discussions"
 gitIssues = "https://github.com/FreshROMs/Fresh/issues"
