@@ -57,4 +57,5 @@ fields:
   label: Links
   description: Links used by the ROM.
 pages:
+- content/fresh/_index.md
 - content/fresh/a50xx/beta/_index.md
