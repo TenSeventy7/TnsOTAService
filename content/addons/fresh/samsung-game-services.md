@@ -2,7 +2,7 @@
 category = "Games"
 creationDate = 2021-03-23T16:00:00Z
 description = "Game Services. Works."
-imageUrl = "/uploads/twitch.png"
+imageUrl = "/uploads/game_launcher.webp"
 packageName = "io.tensevntysevn.fresh.addons.games"
 publishDate = 2021-03-23T16:00:00Z
 rom = "fresh"
