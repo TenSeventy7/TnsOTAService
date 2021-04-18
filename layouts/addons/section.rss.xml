@@ -2,19 +2,29 @@
 {{ $.Scratch.Set "counter" 0 }}
   {{ range .Pages }}
     {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
-	    <addon>
-	    <id>{{ add ($.Scratch.Get "counter") 400000}}</id>
-	    <name>{{ .Title }}</name>
-	    <description>{{ replace (.Plain) "\n" " " }}</description>
-	    {{ with .Params.publishDate }}<updated-at>{{ .Format "2006-01-02" }}</updated-at>{{ end }}
-	    <Package>
-		    <size type="integer">{{ .Params.addon.packageSize }}</size>
-		    {{ if .Params.addon.noMirror }}
-		    <download-link>{{ .Params.addon.packageUrl }}</download-link>
-		    {{ else }}
-		    <download-link>https://downloads.sourceforge.net/project/freshroms/{{ .Params.addon.packageUrl }}</download-link>
-	    	{{ end }}
-	    </Package>
-	</addon>
+		<Addon>
+			<Metadata>
+			    <Id>{{ add ($.Scratch.Get "counter") 400000}}</Id>
+			    <Package>{{ .Params.packageName }}</Package>
+			    <Thumbnail>{{ .Params.imageUrl }}</Thumbnail>
+			    <Name>{{ .Title }}</Name>
+			    <Description>{{ .Params.description }}</Description>
+			    <FullInfo>
+			    	{{ .RawContent }}
+			    </FullInfo>
+			</Metadata>
+			<Build>
+		    	<VersionName>{{ .Params.addon.versionName }}</VersionName>
+		    	{{ with .Params.publishDate }}<VersionNumber>{{ .Format "20060102" }}</VersionNumber>{{ end }}
+			</Build>
+		    <Package>
+			    {{ if .Params.addon.noMirror }}
+			    <DirectUrl>{{ .Params.addon.packageUrl }}</DirectUrl>
+			    {{ else }}
+			    <DirectUrl>https://downloads.sourceforge.net/project/freshroms/{{ .Params.addon.packageUrl }}</DirectUrl>
+		    	{{ end }}
+			    <FileSize type="integer">{{ .Params.addon.packageSize }}</FileSize>
+		    </Package>
+		</Addon>
   {{ end }}
 {{ end }}

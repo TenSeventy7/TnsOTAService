@@ -1,6 +1,6 @@
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
-<hash>
-    <addons>
+<StoreService>
+    <Store>
       {{ block "response" . }}{{- end }}
-    </addons>
-</hash>
+    </Store>
+</StoreService>

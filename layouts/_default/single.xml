@@ -19,6 +19,11 @@
   </Addons>
   {{ end }}
 
+  <FreshApp>    
+    <AppVersion>{{ .Site.Data.freshApp.versionNumber }}</AppVersion>
+    <AppUrl>{{ .Site.Data.freshApp.apkFile }}/</AppUrl>
+  </FreshApp>
+
   {{ with .NextInSection }}
   {{ with .NextInSection }}
   {{ with .NextInSection }}
@@ -65,7 +70,7 @@
       <HttpUrl>{{ .Params.delta.packageUrl }}</HttpUrl>
     {{ else }}
       <DirectUrl>https://downloads.sourceforge.net/project/freshroms/{{ .Params.delta.packageUrl }}</DirectUrl>
-      <HttpUrl>https://sourceforge.net/projects/freshroms/files/{{ .Params.delta.packageUrl }}</HttpUrl>q
+      <HttpUrl>https://sourceforge.net/projects/freshroms/files/{{ .Params.delta.packageUrl }}</HttpUrl>
     {{ end }}
       <FileSize type="integer">{{ .Params.delta.packageSize }}</FileSize>
       <CheckMD5>{{ .Params.delta.packageHash }}</CheckMD5>
