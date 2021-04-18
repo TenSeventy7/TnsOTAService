@@ -10,7 +10,7 @@ title = "Bixby"
 [addon]
 noMirror = false
 packageHash = ""
-packageSize = 2000001
+packageSize = 2000000001
 packageUrl = "https://google.com"
 versionName = "12.1.1.0"
 
