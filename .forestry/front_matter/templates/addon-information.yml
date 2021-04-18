@@ -3,45 +3,71 @@ label: Addon Information
 hide_body: false
 fields:
 - type: text
+  name: title
+  label: Name
+  description: Name of the Addon
+  config:
+    required: true
+- type: text
+  name: packageName
+  label: Package Name
+  description: Addon package name.
+  config:
+    required: true
+- type: text
   name: category
-  label: category
+  label: Category
+  description: Category of the addon.
+- type: datetime
+  name: publishDate
+  label: Publish Date
+  description: When the update/addon was published.
+  config:
+    required: true
+  default: now
+- type: text
+  name: description
+  label: Short Description
+  description: Short description of the addon.
+- name: imageUrl
+  type: file
+  config:
+    maxSize: 64
+  label: Thumbnail
+  description: Image to be shown in the UI.
 - type: datetime
   name: creationDate
   label: creationDate
-- type: datetime
-  name: publishDate
-  label: publishDate
+  hidden: true
+  default: now
 - type: text
   name: rom
-  label: rom
-- type: text
-  name: title
-  label: title
-- type: text
-  name: description
-  label: description
-- type: text
-  name: packageName
-  label: packageName
-- type: text
-  name: imageUrl
-  label: imageUrl
+  label: Required ROM
+  config:
+    required: true
+  default: fresh
+  hidden: true
 - type: field_group
   name: addon
-  label: addon
+  label: Addon Information
   fields:
   - type: boolean
     name: noMirror
     label: noMirror
   - type: text
     name: versionName
-    label: versionName
+    label: Version Name
+    description: Human-readable version of the addon.
   - type: text
     name: packageHash
-    label: packageHash
+    label: Package Hash
+    description: MD5 hash of the package.
   - type: number
     name: packageSize
-    label: packageSize
+    label: Package Size
+    description: Size of the addon package.
   - type: text
     name: packageUrl
-    label: packageUrl
+    label: Package URL
+    description: URL of the package
+  description: Links, version name, and size.
