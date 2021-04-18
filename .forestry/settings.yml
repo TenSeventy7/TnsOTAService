@@ -22,7 +22,6 @@ sections:
 - type: document
   path: data/freshApp.yml
   label: Fresh App
-  match: "**/*"
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
