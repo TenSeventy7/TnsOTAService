@@ -5,7 +5,7 @@
 		<Addon>
 			<Metadata>
 			    <Id>{{ add ($.Scratch.Get "counter") 400000}}</Id>
-			    <Package>{{ .Params.packageName }}</Package>
+			    <PackageName>{{ .Params.packageName }}</PackageName>
 			    <Thumbnail>{{ .Params.imageUrl | absURL }}</Thumbnail>
 			    <Name>{{ .Title }}</Name>
 			    <Description>{{ .Params.description }}</Description>
