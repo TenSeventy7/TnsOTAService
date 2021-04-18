@@ -51,23 +51,26 @@ fields:
   name: addon
   label: Addon Information
   fields:
-  - type: boolean
-    name: noMirror
-    label: noMirror
   - type: text
     name: versionName
     label: Version Name
     description: Human-readable version of the addon.
+  - type: boolean
+    name: noMirror
+    label: Disable Mirroring
+    description: Disable mirroring of delta package. <strong>Full URL must be specified
+      if this is enabled!</strong>
   - type: text
-    name: packageHash
-    label: Package Hash
-    description: MD5 hash of the package.
+    name: packageUrl
+    label: Package URL
+    description: Direct URL of the package. <strong>Only specify file path from SourceForge
+      Files root if mirroring is enabled.</strong>
   - type: number
     name: packageSize
     label: Package Size
     description: Size of the addon package.
   - type: text
-    name: packageUrl
-    label: Package URL
-    description: URL of the package
-  description: Links, version name, and size.
+    name: packageHash
+    label: Package Hash
+    description: MD5 hash of the package.
+  description: Information about the addon release.
