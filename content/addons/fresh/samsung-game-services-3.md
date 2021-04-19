@@ -2,9 +2,8 @@
 category = "Games"
 creationDate = 2021-03-23T16:00:00Z
 description = "Game Services. Works."
-draft = true
 imageUrl = "/uploads/game_launcher.webp"
-packageName = "io.tensevntysevn.fresh.addons.games8"
+packageName = "io.tensevntysevn.fresh.addons.games7"
 publishDate = 2021-03-23T16:00:00Z
 rom = "fresh"
 title = "Samsung Game Services 3"
