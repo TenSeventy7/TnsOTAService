@@ -76,3 +76,4 @@ fields:
   description: Information about the addon release.
 pages:
 - content/addons/fresh/bixby.md
+- content/addons/fresh/test-addon.md
