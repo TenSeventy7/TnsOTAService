@@ -9,9 +9,9 @@ rom = "fresh"
 title = "ANT+"
 [addon]
 noMirror = false
-packageHash = ""
-packageSize = nil
-packageUrl = ""
+packageHash = "hash"
+packageSize = 1010101010
+packageUrl = "https://google.com"
 versionName = "12.0.0.1"
 
 +++
