@@ -76,6 +76,7 @@ fields:
   description: Information about the addon release.
 pages:
 - content/addons/fresh/ant.md
+- content/addons/fresh/bixby-vision.md
 - content/addons/fresh/bixby-voice.md
 - content/addons/fresh/fresh-core-beta.md
 - content/addons/fresh/my-galaxy.md
