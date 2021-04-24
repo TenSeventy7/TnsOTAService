@@ -1,7 +1,7 @@
 +++
 category = "Games"
 creationDate = 2021-03-23T16:00:00Z
-description = "Samsung Game Home, Tools, and Optimizing Service."
+description = "Samsung Game Home and Tools."
 imageUrl = "/uploads/slide27.PNG"
 packageName = "io.tns.fresh.samsung.games"
 publishDate = 2021-04-23T16:00:00Z
