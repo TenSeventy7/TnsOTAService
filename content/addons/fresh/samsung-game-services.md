@@ -1,7 +1,7 @@
 +++
 category = "Games"
 creationDate = 2021-03-23T16:00:00Z
-description = "Samsung Game Home and Tools."
+description = "Level up mobile gaming."
 imageUrl = "/uploads/slide27.PNG"
 packageName = "io.tns.fresh.samsung.games"
 publishDate = 2021-04-23T16:00:00Z
@@ -15,4 +15,30 @@ packageUrl = "Addons/11.5.2.8/FRSH-Addon_GameServices_11.5.2.8_20210221001.zip"
 versionName = "12.0.0.1"
 
 +++
-Demo
+**Level up mobile gaming.**
+
+Game Launcher is the all-in-one hub to find things you already love, discover more to play, check out leaderboards, explore what's trending, and share your game data. All the features you need are in one place for an exciting and fuss-free experience.
+
+Game Launcher is the **ultimate** control center for games. All your games in one convenient place with new downloads added automatically.
+
+Before playing, you can mute and hide alerts and adjust game settings to save power or increase user experience in gameplay.
+
+#### All about games. Everywhere, anytime.
+
+**Where all the fun revolves around you.** Open the Game Launcher to pick up where you left off on your favorites or try out new Instant Plays without having to install anything. One click and you're already in the fun zone.
+
+#### Quick, easy game organization
+
+**Jump in and play straight away.** As soon as your download finishes, it goes directly to Game Launcher so you can start straight away. Just like an awesome game organizer, everything is kept together for you to flick through and make a choice, with no delay.
+
+#### Check out what's happening
+
+**Stay on top.** Game Launcher is packed with trending games, ranking of games, and popular YouTube videos, with exclusive offers for Galaxy Store users, too. There's no need to switch between different apps for trustworthy updates—get them all here.
+
+### Connect with friends who play games across multiple platforms with Discord
+
+**Find out what friends are playing, when they are playing, and join in to talk with just 1 click** - all directly in the Game Launcher!  
+The exclusive Discord overlay easily shows who is talking without ever having to switch apps.
+
+###### * UI/UX is subject to change.  
+\* Availability of games and features may vary by country and device.
