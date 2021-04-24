@@ -1,7 +1,7 @@
 +++
 category = ""
 creationDate = 2021-04-24T02:43:56Z
-description = "Building and connecting communities."
+description = "Connecting communities."
 imageUrl = "/uploads/slide24.PNG"
 packageName = "io.tns.fresh.fb"
 publishDate = 2021-04-24T02:43:56Z
