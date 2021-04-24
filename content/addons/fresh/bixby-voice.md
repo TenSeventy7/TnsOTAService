@@ -1,7 +1,7 @@
 +++
 category = ""
 creationDate = 2021-04-24T02:43:56Z
-description = "Unlock the full potential of your Samsung device."
+description = "Unlock your phone's full potential."
 imageUrl = "/uploads/slide21.PNG"
 packageName = "io.tns.fresh.bixby.voice"
 publishDate = 2021-04-24T02:43:56Z
