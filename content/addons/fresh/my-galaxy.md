@@ -1,10 +1,9 @@
 +++
 category = ""
 creationDate = 2021-04-24T02:43:56Z
-description = "Beta builds of Fresh Core."
-draft = true
-imageUrl = "/uploads/slide26.PNG"
-packageName = "io.tns.fresh.core.upstream"
+description = "Supercharge your Samsung Experience!"
+imageUrl = "/uploads/slide20.PNG"
+packageName = "io.tns.fresh.samsung.mg"
 publishDate = 2021-04-24T02:43:56Z
 rom = "fresh"
 title = "My Galaxy"
