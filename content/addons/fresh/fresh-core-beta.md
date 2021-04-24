@@ -10,7 +10,7 @@ title = "Fresh Core (Beta)"
 [addon]
 noMirror = false
 packageHash = "hash"
-packageSize = 1010101010
+packageSize = 10000000
 packageUrl = "https://google.com"
 versionName = "12.0.0.1"
 
