@@ -1,7 +1,7 @@
 +++
 category = ""
 creationDate = 2021-04-24T02:43:56Z
-description = "Supercharge your Samsung Experience!"
+description = "Supercharge your experience!"
 imageUrl = "/uploads/slide20.PNG"
 packageName = "io.tns.fresh.samsung.mg"
 publishDate = 2021-04-24T02:43:56Z
