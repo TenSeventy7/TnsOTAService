@@ -2,9 +2,8 @@
 category = ""
 creationDate = 2021-04-24T02:43:56Z
 description = "Product desc goes here"
-draft = true
 imageUrl = "/uploads/singlespeaker.png"
-packageName = "io.tns.fresh.ssp"
+packageName = "io.tns.fresh.encryptflag"
 publishDate = 2021-04-24T02:43:56Z
 rom = "fresh"
 title = "(Fake) Encryption Flag"
