@@ -15,6 +15,6 @@ packageUrl = "https://google.com"
 versionName = "12.0.0.1"
 
 +++
-This addon is **uninstallable** and cannot be removed unless Fresh is reinstalled.
+This addon is **not uninstallable** and cannot be removed unless Fresh is reinstalled.
 
 This reverts "stereo speakers" to what is used on stock Samsung ROMs.
