@@ -11,8 +11,8 @@ title = "ANT+"
 noMirror = false
 packageHash = "hash"
 packageSize = 2062785
-packageUrl = "https://google.com"
-versionName = "12.0.0.1"
+packageUrl = "Addons/12.0.1.2/FRSH-Addon_ANT%2B_12.0.1.2_20210425.zip/download"
+versionName = "12.0.1.2"
 
 +++
 ## YOUR HEALTH & FITNESS PARTNER
