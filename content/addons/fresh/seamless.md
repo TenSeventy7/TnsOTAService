@@ -11,8 +11,8 @@ title = "Seamless"
 noMirror = false
 packageHash = "hash"
 packageSize = 14679858
-packageUrl = "https://google.com"
-versionName = "12.0.0.1"
+packageUrl = "Addons/12.0.1.2/FRSH-Addon_Samsung%20Seamless_12.0.1.2_20210425.zip/download"
+versionName = "12.0.1.2"
 
 +++
 Includes **Link to Windows** and **Call and text on other devices.**
