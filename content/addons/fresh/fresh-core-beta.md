@@ -8,11 +8,11 @@ publishDate = 2021-04-25T01:00:00Z
 rom = "fresh"
 title = "Fresh Core (Beta)"
 [addon]
-noMirror = false
+noMirror = true
 packageHash = "hash"
-packageSize = 10000000
-packageUrl = "https://google.com"
-versionName = "12.0.0.1"
+packageSize = 12338045
+packageUrl = "https://github.com/TenSeventy7/android_kernel_samsung_exynos9610_shadowx/releases/download/ci_69-upstream/FRSH_CORE_a50_upstream_1619343089.zip"
+versionName = "ci_upstream-69"
 
 +++
 This addon is **not uninstallable** and cannot be removed unless Fresh is reinstalled. This addon **replaces** the stable build of Fresh Core installed with beta, upstream builds straight from the kernel repository.
