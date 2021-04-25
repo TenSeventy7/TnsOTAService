@@ -1,17 +1,17 @@
 +++
 category = ""
-creationDate = 2021-04-24T02:43:56Z
+creationDate = 2021-04-25T01:00:00Z
 description = "Supercharge your experience!"
 imageUrl = "/uploads/slide20.PNG"
 packageName = "io.tns.fresh.sm.mygalaxy"
-publishDate = 2021-04-24T02:43:56Z
+publishDate = 2021-04-25T01:00:00Z
 rom = "fresh"
 title = "My Galaxy"
 [addon]
 noMirror = false
 packageHash = "hash"
 packageSize = 93324425
-packageUrl = "Addons/12.0.1.2/FRSH-Addon_My%20Galaxy_12.0.1.2_20210425.zip/download"
+packageUrl = "Addons/12.0.1.2/FRSH-Addon_My%20Galaxy_12.0.1.2_20210425.zip"
 versionName = "12.0.1.2"
 
 +++

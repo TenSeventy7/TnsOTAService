@@ -1,17 +1,17 @@
 +++
 category = ""
-creationDate = 2021-04-24T02:43:56Z
+creationDate = 2021-04-25T01:00:00Z
 description = "More lively experiences."
 imageUrl = "/uploads/live.png"
 packageName = "io.tns.fresh.samsung.live"
-publishDate = 2021-04-24T02:43:56Z
+publishDate = 2021-04-25T01:00:00Z
 rom = "fresh"
 title = "Samsung Live"
 [addon]
 noMirror = false
 packageHash = "hash"
 packageSize = 16109078
-packageUrl = "Addons/12.0.1.2/FRSH-Addon_Samsung%20Live_12.0.1.2_20210425.zip/download"
+packageUrl = "Addons/12.0.1.2/FRSH-Addon_Samsung%20Live_12.0.1.2_20210425.zip"
 versionName = "12.0.1.2"
 
 +++

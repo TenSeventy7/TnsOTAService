@@ -1,17 +1,17 @@
 +++
 category = ""
-creationDate = 2021-04-24T02:43:56Z
+creationDate = 2021-04-25T01:00:00Z
 description = "Switch between devices effortlessly."
 imageUrl = "/uploads/slide19.PNG"
 packageName = "io.tns.fresh.mdec"
-publishDate = 2021-04-24T02:43:56Z
+publishDate = 2021-04-25T01:00:00Z
 rom = "fresh"
 title = "Seamless"
 [addon]
 noMirror = false
 packageHash = "hash"
 packageSize = 14679858
-packageUrl = "Addons/12.0.1.2/FRSH-Addon_Samsung%20Seamless_12.0.1.2_20210425.zip/download"
+packageUrl = "Addons/12.0.1.2/FRSH-Addon_Samsung%20Seamless_12.0.1.2_20210425.zip"
 versionName = "12.0.1.2"
 
 +++

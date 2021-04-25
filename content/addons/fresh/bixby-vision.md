@@ -1,17 +1,17 @@
 +++
 category = ""
-creationDate = 2021-04-24T02:43:56Z
+creationDate = 2021-04-25T01:00:00Z
 description = "Discover a new perspective."
 imageUrl = "/uploads/slide22.PNG"
 packageName = "io.tns.fresh.bixby.vision"
-publishDate = 2021-04-24T02:43:56Z
+publishDate = 2021-04-25T01:00:00Z
 rom = "fresh"
 title = "Bixby Vision"
 [addon]
 noMirror = false
 packageHash = "hash"
 packageSize = 18076324
-packageUrl = "Addons/12.0.1.2/FRSH-Addon_Bixby%20Vision_12.0.1.2_20210425.zip/download"
+packageUrl = "Addons/12.0.1.2/FRSH-Addon_Bixby%20Vision_12.0.1.2_20210425.zip"
 versionName = "12.0.1.2"
 
 +++
