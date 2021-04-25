@@ -11,8 +11,8 @@ title = "My Galaxy"
 noMirror = false
 packageHash = "hash"
 packageSize = 93324425
-packageUrl = "https://google.com"
-versionName = "12.0.0.1"
+packageUrl = "Addons/12.0.1.2/FRSH-Addon_My%20Galaxy_12.0.1.2_20210425.zip/download"
+versionName = "12.0.1.2"
 
 +++
 **Supercharge your Samsung Experience to new heights!** Apps that make your phone more of your own.
