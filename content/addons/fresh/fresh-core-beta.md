@@ -6,7 +6,7 @@ imageUrl = "/uploads/slide26.PNG"
 packageName = "io.tns.shadowx.upstream"
 publishDate = 2021-04-25T01:00:00Z
 rom = "fresh"
-title = "Fresh Core (Beta)"
+title = "Fresh Core Beta"
 [addon]
 noMirror = true
 packageHash = "hash"
