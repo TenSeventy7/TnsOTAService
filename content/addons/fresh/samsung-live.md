@@ -1,7 +1,7 @@
 +++
 category = ""
 creationDate = 2021-04-24T02:43:56Z
-description = "Product desc goes here"
+description = "More lively experiences."
 imageUrl = "/uploads/live.png"
 packageName = "io.tns.fresh.samsung.live"
 publishDate = 2021-04-24T02:43:56Z
