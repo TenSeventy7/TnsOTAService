@@ -10,7 +10,7 @@ title = "ANT+"
 [addon]
 noMirror = false
 packageHash = "hash"
-packageSize = 10000000
+packageSize = 2062785
 packageUrl = "https://google.com"
 versionName = "12.0.0.1"
 

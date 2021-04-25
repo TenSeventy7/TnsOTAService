@@ -10,7 +10,7 @@ title = "Samsung Game Services"
 [addon]
 noMirror = false
 packageHash = "a2a881886d1b0b229fa5ad481baea7b4"
-packageSize = 2050000
+packageSize = 23726996
 packageUrl = "Addons/11.5.2.8/FRSH-Addon_GameServices_11.5.2.8_20210221001.zip"
 versionName = "12.0.0.1"
 

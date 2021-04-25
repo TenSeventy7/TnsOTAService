@@ -10,7 +10,7 @@ title = "Facebook Services"
 [addon]
 noMirror = false
 packageHash = "hash"
-packageSize = 10000000
+packageSize = 4812586
 packageUrl = "https://google.com"
 versionName = "12.0.0.1"
 

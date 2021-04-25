@@ -10,7 +10,7 @@ title = "Seamless"
 [addon]
 noMirror = false
 packageHash = "hash"
-packageSize = 10000000
+packageSize = 14679858
 packageUrl = "https://google.com"
 versionName = "12.0.0.1"
 
