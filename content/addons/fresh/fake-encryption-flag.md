@@ -6,7 +6,7 @@ imageUrl = "/uploads/encrypt.png"
 packageName = "io.tns.fresh.encryptflag"
 publishDate = 2021-04-24T02:43:56Z
 rom = "fresh"
-title = "(Fake) Encryption Flag"
+title = "Fake Encryption Flag"
 [addon]
 noMirror = false
 packageHash = "hash"
