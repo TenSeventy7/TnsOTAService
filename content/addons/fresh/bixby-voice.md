@@ -11,8 +11,8 @@ title = "Bixby Voice"
 noMirror = false
 packageHash = "hash"
 packageSize = 64962720
-packageUrl = "https://google.com"
-versionName = "12.0.0.1"
+packageUrl = "Addons/12.0.1.2/FRSH-Addon_Bixby%20Voice_12.0.1.2_20210425.zip/download"
+versionName = "12.0.1.2"
 
 +++
 ## Do more with Bixby.
