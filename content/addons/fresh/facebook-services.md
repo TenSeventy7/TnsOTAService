@@ -11,8 +11,8 @@ title = "Facebook Services"
 noMirror = false
 packageHash = "hash"
 packageSize = 4812586
-packageUrl = "https://google.com"
-versionName = "12.0.0.1"
+packageUrl = "Addons/12.0.1.2/FRSH-Addon_Facebook_12.0.1.2_20210425.zip/download"
+versionName = "12.0.1.2"
 
 +++
 ## Coming together to connect and create change.
