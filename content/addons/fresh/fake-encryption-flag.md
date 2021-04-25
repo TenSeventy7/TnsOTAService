@@ -1,7 +1,7 @@
 +++
 category = ""
 creationDate = 2021-04-24T02:43:56Z
-description = "Fake"
+description = "Fake encryption status"
 imageUrl = "/uploads/encrypt.png"
 packageName = "io.tns.fresh.encryptflag"
 publishDate = 2021-04-24T02:43:56Z
