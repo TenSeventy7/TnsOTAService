@@ -23,8 +23,8 @@ Fresh Core is the new kernel included with Fresh 3 that powers your device throu
 
 **Additional features include:**
 
-* Added additional CPU governors, \`schedutil\` as default.
-* Added additional I/O schedulers, \`anxiety\` is set as default.
+* Added additional CPU governors, 'schedutil' as default.
+* Added additional I/O schedulers, 'anxiety' is set as default.
 * Various kernel and performance improvements.
 * Backported some changes from S10/Note10.
 * Releases are compiled with @arter97's stable \[GCC 10.2.0\]
