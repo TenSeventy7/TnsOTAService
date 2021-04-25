@@ -15,3 +15,8 @@ packageUrl = "https://google.com"
 versionName = "12.0.0.1"
 
 +++
+## Coming together to connect and create change.
+
+### People are using Facebook to connect and strengthen their communities.
+
+At the Facebook company, we are constantly iterating, solving problems and working together to connect people all over the world through our apps and technologies.
