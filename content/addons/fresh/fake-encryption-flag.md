@@ -11,8 +11,8 @@ title = "Fake Encryption Flag"
 noMirror = false
 packageHash = "hash"
 packageSize = 1316376
-packageUrl = "https://google.com"
-versionName = "12.0.0.1"
+packageUrl = "https://sourceforge.net/projects/freshroms/files/Addons/12.0.1.2/FRSH-Addon_Fake%20Encryption%20Flag_12.0.1.2_20210425.zip/download"
+versionName = "12.0.1.2"
 
 +++
 Fakes the device as if it is encrypted. **This shows features within One UI that will not work,** and is the reason why this is provided as an addon.
