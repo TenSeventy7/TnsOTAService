@@ -2,7 +2,7 @@
 category = ""
 creationDate = 2021-04-24T02:43:56Z
 description = "Product desc goes here"
-imageUrl = "/uploads/singlespeaker.png"
+imageUrl = "/uploads/encrypt.png"
 packageName = "io.tns.fresh.encryptflag"
 publishDate = 2021-04-24T02:43:56Z
 rom = "fresh"
