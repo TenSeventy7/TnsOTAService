@@ -1,7 +1,7 @@
 +++
 category = ""
 creationDate = 2021-04-24T02:43:56Z
-description = "Product desc goes here"
+description = "Stock speaker behavior."
 imageUrl = "/uploads/singlespeaker.png"
 packageName = "io.tns.fresh.ssp"
 publishDate = 2021-04-24T02:43:56Z
@@ -15,3 +15,6 @@ packageUrl = "https://google.com"
 versionName = "12.0.0.1"
 
 +++
+This addon is **uninstallable** and cannot be removed unless Fresh is reinstalled.
+
+This reverts "stereo speakers" to what is used on stock Samsung ROMs.
