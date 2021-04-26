@@ -21,7 +21,7 @@
 
   <FreshApp>    
     <AppVersion>{{ .Site.Data.freshApp.versionNumber }}</AppVersion>
-    <AppUrl>{{ .Site.Data.freshApp.apkFile }}/</AppUrl>
+    <AppUrl>{{ .Site.Data.freshApp.apkFile }}</AppUrl>
   </FreshApp>
 
   {{ with .NextInSection }}
