@@ -24,7 +24,7 @@
     <AppUrl>{{ .Site.Data.freshApp.apkFile }}</AppUrl>
   </FreshApp>
 
-  {{ with .PrevInSection }}
+  {{ with .NextInSection }}
   {{ block "update" . }}{{- end }}
   {{ else }}
   {{ block "update" . }}{{- end }}
