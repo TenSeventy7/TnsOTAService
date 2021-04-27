@@ -25,28 +25,6 @@
   </FreshApp>
 
   {{ with .NextInSection }}
-  {{ with .NextInSection }}
-  {{ with .NextInSection }}
-  {{ with .NextInSection }}
-  {{ range first 1 .CurrentSection.Pages }}
-  {{ block "update" . }}{{- end }}
-  {{ end }}
-  {{ else }}
-  {{ with .PrevInSection }}
-  {{ with .PrevInSection }}
-  {{ block "update" . }}{{- end }}
-  {{ end }}
-  {{ end }}
-  {{ end }}
-  {{ else }}
-  {{ with .PrevInSection }}
-  {{ block "update" . }}{{- end }}
-  {{ end }}
-  {{ end }}
-  {{ else }}
-  {{ block "update" . }}{{- end }}
-  {{ end }}
-  {{ else }}
   {{ block "update" . }}{{- end }}
   {{ end }}
 {{ end }}
