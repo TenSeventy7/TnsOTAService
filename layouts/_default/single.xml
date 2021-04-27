@@ -26,6 +26,8 @@
 
   {{ with .NextInSection }}
   {{ block "update" . }}{{- end }}
+  {{ else }}
+  {{ block "update" . }}{{- end }}
   {{ end }}
 {{ end }}
 
