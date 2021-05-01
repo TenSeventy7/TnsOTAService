@@ -5,7 +5,7 @@
   <Developer>TenSeventy7 and the Fresh Community</Developer>
   <Release type="integer">2</Release>
   {{ with .CurrentSection.Params.urls.forum }}<WebsiteURL>{{ . }}</WebsiteURL>{{ end }}
-  {{ with .CurrentSection.Params.urls.forum }}<ForumURL>{{ . }}</ForumURL>{{ end }}
+  {{ with .FirstSection.Params.urls.website }}<ForumURL>{{ . }}</ForumURL>{{ end }}
   {{ with .FirstSection.Params.urls.discord }}<DiscordURL>{{ . }}</DiscordURL>{{ end }}
   {{ with .FirstSection.Params.urls.gitIssues }}<GitIssues>{{ . }}</GitIssues>{{ end }}
   {{ with .FirstSection.Params.urls.gitDiscussion }}<GitDiscussion>{{ . }}</GitDiscussion>{{ end }}
