@@ -14,6 +14,13 @@ fields:
   description: Addon package name.
   config:
     required: true
+- name: addonPublisher
+  type: text
+  config:
+    required: true
+  label: Publisher
+  description: Developer of the addon.
+  default: TenSeventy7
 - type: text
   name: category
   label: Category
