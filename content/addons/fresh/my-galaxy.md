@@ -1,10 +1,10 @@
 +++
 category = ""
-creationDate = 2021-04-25T01:00:00Z
 description = "Supercharge your experience!"
 imageUrl = "/uploads/slide20.PNG"
 packageName = "io.tns.fresh.sm.mygalaxy"
-publishDate = 2021-04-25T01:00:00Z
+versionNumber = 20210430
+addonPublisher = "TenSeventy7"
 rom = "fresh"
 title = "My Galaxy"
 [addon]

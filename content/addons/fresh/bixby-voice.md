@@ -1,10 +1,10 @@
 +++
 category = ""
-creationDate = 2021-04-25T01:00:00Z
 description = "Unlock your phone's full potential."
 imageUrl = "/uploads/slide21.PNG"
 packageName = "io.tns.fresh.bixby.voice"
-publishDate = 2021-04-25T01:00:00Z
+versionNumber = 20210430
+addonPublisher = "TenSeventy7"
 rom = "fresh"
 title = "Bixby Voice"
 [addon]

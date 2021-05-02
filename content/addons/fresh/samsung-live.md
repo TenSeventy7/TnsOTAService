@@ -1,10 +1,10 @@
 +++
 category = ""
-creationDate = 2021-04-25T01:00:00Z
 description = "More lively experiences."
 imageUrl = "/uploads/live.png"
 packageName = "io.tns.fresh.samsung.live"
-publishDate = 2021-04-25T01:00:00Z
+versionNumber = 20210430
+addonPublisher = "TenSeventy7"
 rom = "fresh"
 title = "Samsung Live"
 [addon]

@@ -1,10 +1,10 @@
 +++
 category = ""
-creationDate = 2021-04-25T01:00:00Z
 description = "Makes it easy."
 imageUrl = "/uploads/slide23.PNG"
 packageName = "io.tns.fresh.antplus"
-publishDate = 2021-04-25T01:00:00Z
+versionNumber = 20210430
+addonPublisher = "TenSeventy7"
 rom = "fresh"
 title = "ANT+"
 [addon]

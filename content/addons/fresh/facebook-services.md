@@ -1,10 +1,10 @@
 +++
 category = ""
-creationDate = 2021-04-25T01:00:00Z
 description = "Connecting communities."
 imageUrl = "/uploads/slide24.PNG"
 packageName = "io.tns.fresh.fb"
-publishDate = 2021-04-25T01:00:00Z
+versionNumber = 20210430
+addonPublisher = "TenSeventy7"
 rom = "fresh"
 title = "Facebook Services"
 [addon]

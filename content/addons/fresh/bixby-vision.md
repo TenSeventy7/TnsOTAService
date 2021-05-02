@@ -1,10 +1,10 @@
 +++
 category = ""
-creationDate = 2021-04-25T01:00:00Z
 description = "Discover a new perspective."
 imageUrl = "/uploads/slide22.PNG"
 packageName = "io.tns.fresh.bixby.vision"
-publishDate = 2021-04-25T01:00:00Z
+versionNumber = 20210430
+addonPublisher = "TenSeventy7"
 rom = "fresh"
 title = "Bixby Vision"
 [addon]

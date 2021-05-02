@@ -6,6 +6,7 @@
 			<Metadata>
 			    <Id>{{ add ($.Scratch.Get "counter") 400000}}</Id>
 			    <PackageName>{{ .Params.packageName }}</PackageName>
+			    <Publisher>{{ .Params.addonPublisher }}</Publisher>
 			    <Thumbnail>{{ .Params.imageUrl | absURL }}</Thumbnail>
 			    <Name>{{ .Title }}</Name>
 			    <Description>{{ .Params.description }}</Description>
@@ -15,16 +16,16 @@
 			</Metadata>
 			<Build>
 		    	<VersionName>{{ .Params.addon.versionName }}</VersionName>
-		    	{{ with .Params.publishDate }}<VersionNumber>{{ .Format "20060102" }}</VersionNumber>{{ end }}
+		    	<VersionNumber>{{ .Params.addon.versionNumber }}</VersionNumber>
+			    <Package>
+				    {{ if .Params.addon.noMirror }}
+				    <DirectUrl>{{ .Params.addon.packageUrl }}</DirectUrl>
+				    {{ else }}
+				    <DirectUrl>https://downloads.sourceforge.net/project/freshroms/{{ .Params.addon.packageUrl }}</DirectUrl>
+			    	{{ end }}
+				    <FileSize type="integer">{{ .Params.addon.packageSize }}</FileSize>
+			    </Package>
 			</Build>
-		    <Package>
-			    {{ if .Params.addon.noMirror }}
-			    <DirectUrl>{{ .Params.addon.packageUrl }}</DirectUrl>
-			    {{ else }}
-			    <DirectUrl>https://downloads.sourceforge.net/project/freshroms/{{ .Params.addon.packageUrl }}</DirectUrl>
-		    	{{ end }}
-			    <FileSize type="integer">{{ .Params.addon.packageSize }}</FileSize>
-		    </Package>
 		</Addon>
   {{ end }}
 {{ end }}

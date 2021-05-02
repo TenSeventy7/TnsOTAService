@@ -1,10 +1,10 @@
 +++
 category = "Games"
-creationDate = 2021-03-23T16:00:00Z
 description = "Level up mobile gaming."
 imageUrl = "/uploads/slide27.PNG"
 packageName = "io.tns.fresh.gamehome"
 publishDate = 2021-04-23T16:00:00Z
+addonPublisher = "TenSeventy7"
 rom = "fresh"
 title = "Samsung Game Services"
 [addon]

@@ -1,10 +1,10 @@
 +++
 category = ""
-creationDate = 2021-04-25T01:00:00Z
 description = "Switch between devices effortlessly."
 imageUrl = "/uploads/slide19.PNG"
 packageName = "io.tns.fresh.mdec"
-publishDate = 2021-04-25T01:00:00Z
+versionNumber = 20210430
+addonPublisher = "TenSeventy7"
 rom = "fresh"
 title = "Seamless"
 [addon]

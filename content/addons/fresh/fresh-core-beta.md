@@ -1,10 +1,10 @@
 +++
 category = ""
-creationDate = 2021-04-25T01:00:00Z
 description = "Beta builds of Fresh Core."
 imageUrl = "/uploads/slide26.PNG"
 packageName = "io.tns.shadowx.upstream"
-publishDate = 2021-04-25T01:00:00Z
+versionNumber = 20210430
+addonPublisher = "TenSeventy7"
 rom = "fresh"
 title = "Fresh Core Beta"
 [addon]

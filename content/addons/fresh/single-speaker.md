@@ -1,10 +1,10 @@
 +++
 category = ""
-creationDate = 2021-04-25T01:00:00Z
 description = "Stock speaker behavior."
 imageUrl = "/uploads/singlespeaker.png"
 packageName = "io.tns.fresh.ssp"
-publishDate = 2021-04-25T01:00:00Z
+versionNumber = 20210430
+addonPublisher = "TenSeventy7"
 rom = "fresh"
 title = "Single Speaker"
 [addon]

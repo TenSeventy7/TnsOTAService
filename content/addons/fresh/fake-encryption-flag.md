@@ -1,10 +1,10 @@
 +++
 category = ""
-creationDate = 2021-04-25T01:00:00Z
 description = "Fake encryption status"
 imageUrl = "/uploads/encrypt.png"
 packageName = "io.tns.fresh.encryptflag"
-publishDate = 2021-04-25T01:00:00Z
+versionNumber = 20210430
+addonPublisher = "TenSeventy7"
 rom = "fresh"
 title = "Fake Encryption Flag"
 [addon]
