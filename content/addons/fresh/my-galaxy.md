@@ -1,12 +1,12 @@
 +++
+addonPublisher = "TenSeventy7"
 category = ""
 description = "Supercharge your experience!"
 imageUrl = "/uploads/slide20.PNG"
 packageName = "io.tns.fresh.sm.mygalaxy"
-versionNumber = 20210430
-addonPublisher = "TenSeventy7"
 rom = "fresh"
 title = "My Galaxy"
+versionNumber = 20210430
 [addon]
 noMirror = false
 packageHash = "hash"
@@ -19,10 +19,10 @@ versionName = "12.0.2.0"
 
 Find all the essential **_apps_** and services you need for your **_Galaxy_** and **_Galaxy_** Watch devices right here. This addon includes:
 
+* Dual Messenger
 * Samsung Dictionary
 * Gear Manager
 * Kids Home
-* Smart Reminder
 * Microsoft OneDrive for Samsung
 * Samsung Checkout
 * Smart Touch Call; and
