@@ -29,13 +29,6 @@ fields:
     max: 
     step: 
     required: true
-- type: datetime
-  name: publishDate
-  label: Publish Date
-  description: When the update/addon was published.
-  config:
-    required: true
-  default: now
 - type: text
   name: description
   label: Short Description
@@ -46,11 +39,6 @@ fields:
     maxSize: 64
   label: Thumbnail
   description: Image to be shown in the UI.
-- type: datetime
-  name: creationDate
-  label: creationDate
-  hidden: true
-  default: now
 - type: text
   name: rom
   label: Required ROM
