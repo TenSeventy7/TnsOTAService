@@ -11,8 +11,8 @@ title = "G+"
 noMirror = false
 packageHash = "hash"
 packageSize = 154944468
-packageUrl = "Addons/12.0.1.2/FRSH-Addon_G%2B_12.0.1.2_20210425.zip"
-versionName = "12.0.1.2"
+packageUrl = "Addons/12.0.2.0/FRSH-Addon_G%2B_12.0.2.0_20210430.zip"
+versionName = "12.0.2.0"
 
 +++
 ### Our mission is to organize the world’s information and make it universally accessible and useful.

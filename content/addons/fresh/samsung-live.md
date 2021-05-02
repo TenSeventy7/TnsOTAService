@@ -11,8 +11,8 @@ title = "Samsung Live"
 noMirror = false
 packageHash = "hash"
 packageSize = 16109078
-packageUrl = "Addons/12.0.1.2/FRSH-Addon_Samsung%20Live_12.0.1.2_20210425.zip"
-versionName = "12.0.1.2"
+packageUrl = "Addons/12.0.2.0/FRSH-Addon_Samsung%20Live_12.0.2.0_20210430.zip"
+versionName = "12.0.2.0"
 
 +++
 More lively, wireless experiences with Samsung. Includes Wi-Fi Direct sharing, Samsung Quick Share, and Samsung Smart View.
