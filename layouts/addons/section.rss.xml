@@ -16,7 +16,7 @@
 			</Metadata>
 			<Build>
 		    	<VersionName>{{ .Params.addon.versionName }}</VersionName>
-		    	<VersionNumber>{{ .Params.addon.versionNumber }}</VersionNumber>
+		    	<VersionNumber>{{ .Params.versionNumber }}</VersionNumber>
 			    <Package>
 				    {{ if .Params.addon.noMirror }}
 				    <DirectUrl>{{ .Params.addon.packageUrl }}</DirectUrl>
