@@ -18,6 +18,17 @@ fields:
   name: category
   label: Category
   description: Category of the addon.
+- name: versionNumber
+  type: number
+  label: Version number
+  description: "<strong>Must be higher than older version!</strong>"
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+    required: true
 - type: datetime
   name: publishDate
   label: Publish Date
