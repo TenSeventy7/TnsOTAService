@@ -10,7 +10,7 @@ title = "G+"
 [addon]
 noMirror = false
 packageHash = "hash"
-packageSize = 154944468
+packageSize = 155897642
 packageUrl = "Addons/12.0.2.0/FRSH-Addon_G%2B_12.0.2.0_20210430.zip"
 versionName = "12.0.2.0"
 

@@ -10,7 +10,7 @@ title = "Fake Encryption Flag"
 [addon]
 noMirror = false
 packageHash = "hash"
-packageSize = 1316376
+packageSize = 2269550
 packageUrl = "Addons/12.0.2.0/FRSH-Addon_Fake%20Encryption%20Flag_12.0.2.0_20210430.zip"
 versionName = "12.0.2.0"
 

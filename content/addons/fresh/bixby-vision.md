@@ -10,7 +10,7 @@ title = "Bixby Vision"
 [addon]
 noMirror = false
 packageHash = "hash"
-packageSize = 18076324
+packageSize = 19029498
 packageUrl = "Addons/12.0.2.0/FRSH-Addon_Bixby%20Vision_12.0.2.0_20210430.zip"
 versionName = "12.0.2.0"
 

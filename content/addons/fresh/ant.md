@@ -10,7 +10,7 @@ title = "ANT+"
 [addon]
 noMirror = false
 packageHash = "hash"
-packageSize = 2062785
+packageSize = 3015959
 packageUrl = "Addons/12.0.2.0/FRSH-Addon_ANT%2B_12.0.2.0_20210430.zip"
 versionName = "12.0.2.0"
 

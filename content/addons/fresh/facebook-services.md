@@ -6,11 +6,11 @@ packageName = "io.tns.fresh.fb"
 versionNumber = 20210430
 addonPublisher = "TenSeventy7"
 rom = "fresh"
-title = "Facebook Services"
+title = "Facebook"
 [addon]
 noMirror = false
 packageHash = "hash"
-packageSize = 4812586
+packageSize = 5765760
 packageUrl = "Addons/12.0.2.0/FRSH-Addon_Facebook_12.0.2.0_20210430.zip"
 versionName = "12.0.2.0"
 

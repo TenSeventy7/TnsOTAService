@@ -10,7 +10,7 @@ title = "Samsung Live"
 [addon]
 noMirror = false
 packageHash = "hash"
-packageSize = 16109078
+packageSize = 17062252
 packageUrl = "Addons/12.0.2.0/FRSH-Addon_Samsung%20Live_12.0.2.0_20210430.zip"
 versionName = "12.0.2.0"
 

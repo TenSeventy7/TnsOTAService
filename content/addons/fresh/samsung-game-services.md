@@ -6,11 +6,11 @@ packageName = "io.tns.fresh.gamehome"
 versionNumber = 20210430
 addonPublisher = "TenSeventy7"
 rom = "fresh"
-title = "Samsung Game Services"
+title = "Samsung Game Home"
 [addon]
 noMirror = false
 packageHash = "a2a881886d1b0b229fa5ad481baea7b4"
-packageSize = 23726996
+packageSize = 24680170
 packageUrl = "Addons/12.0.2.0/FRSH-Addon_Samsung%20Game%20Home_12.0.2.0_20210430.zip"
 versionName = "12.0.2.0"
 

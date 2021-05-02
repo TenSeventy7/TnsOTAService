@@ -6,11 +6,11 @@ packageName = "io.tns.fresh.mdec"
 versionNumber = 20210430
 addonPublisher = "TenSeventy7"
 rom = "fresh"
-title = "Seamless"
+title = "Samsung Seamless"
 [addon]
 noMirror = false
 packageHash = "hash"
-packageSize = 14679858
+packageSize = 15633015
 packageUrl = "Addons/12.0.2.0/FRSH-Addon_Samsung%20Seamless_12.0.2.0_20210430.zip"
 versionName = "12.0.2.0"
 

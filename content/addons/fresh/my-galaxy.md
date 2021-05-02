@@ -10,7 +10,7 @@ title = "My Galaxy"
 [addon]
 noMirror = false
 packageHash = "hash"
-packageSize = 93324425
+packageSize = 90440950
 packageUrl = "Addons/12.0.2.0/FRSH-Addon_My%20Galaxy_12.0.2.0_20210430.zip"
 versionName = "12.0.2.0"
 

@@ -10,7 +10,7 @@ title = "Bixby Voice"
 [addon]
 noMirror = false
 packageHash = "hash"
-packageSize = 64962720
+packageSize = 65915894
 packageUrl = "Addons/12.0.2.0/FRSH-Addon_Bixby%20Voice_12.0.2.0_20210430.zip"
 versionName = "12.0.2.0"
 
