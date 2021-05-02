@@ -1,12 +1,12 @@
 +++
+addonPublisher = "TenSeventy7"
 category = ""
 description = "Making Android more useful."
 imageUrl = "/uploads/slide25.PNG"
 packageName = "io.tns.fresh.gplus"
-versionNumber = 20210430
-addonPublisher = "TenSeventy7"
 rom = "fresh"
 title = "G+"
+versionNumber = 20210430
 [addon]
 noMirror = false
 packageHash = "hash"
@@ -15,6 +15,8 @@ packageUrl = "Addons/12.0.2.0/FRSH-Addon_G%2B_12.0.2.0_20210430.zip"
 versionName = "12.0.2.0"
 
 +++
+Includes **all optional Google apps**, including Gmail, Maps, the Google app, and Duo.
+
 ### Our mission is to organize the world’s information and make it universally accessible and useful.
 
 ### Helping small businesses recover
