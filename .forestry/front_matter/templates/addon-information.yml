@@ -75,6 +75,7 @@ fields:
   description: Information about the addon release.
 pages:
 - content/addons/fresh/ant.md
+- content/addons/fresh/bixby-smart.md
 - content/addons/fresh/bixby-vision.md
 - content/addons/fresh/bixby-voice.md
 - content/addons/fresh/facebook-services.md
