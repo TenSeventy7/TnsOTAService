@@ -10,7 +10,7 @@ title = "Fresh Core Beta"
 [addon]
 noMirror = true
 packageHash = "hash"
-packageSize = 12338045
+packageSize = 12337947
 packageUrl = "https://github.com/TenSeventy7/android_kernel_samsung_exynos9610_fresh/releases/download/ci_83-upstream/FRSH_CORE_a50_upstream_1619745379.zip"
 versionName = "ci_upstream-83"
 
