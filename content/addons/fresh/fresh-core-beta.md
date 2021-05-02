@@ -1,16 +1,16 @@
 +++
+addonPublisher = "TenSeventy7"
 category = ""
 description = "Beta builds of Fresh Core."
 imageUrl = "/uploads/slide26.PNG"
 packageName = "io.tns.shadowx.upstream"
-versionNumber = 84
-addonPublisher = "TenSeventy7"
 rom = "fresh"
 title = "Fresh Core Beta"
+versionNumber = 84
 [addon]
 noMirror = true
 packageHash = "hash"
-packageSize = 12337930
+packageSize = 12337000
 packageUrl = "https://github.com/TenSeventy7/android_kernel_samsung_exynos9610_fresh/releases/download/ci_84-upstream/FRSH_CORE_a50_upstream_1619922289.zip"
 versionName = "ci_upstream-84"
 
