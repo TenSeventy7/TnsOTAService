@@ -1,11 +1,20 @@
 baseURL = "https://tensevntysevn-ota.pages.dev/"
 languageCode = "en-us"
-title = "Tensevntysevn OTA Services"
-
-[outputs]
-    section = ["rss"]
-    page = ["rss"]
 title = "TNS OTA Services"
 
 [params]
 	donateUrl = ""
+
+[outputs]
+    section = ["HTML"]
+    page = ["HTML"]
+
+[mediaTypes]
+[mediaTypes."application/xml"]
+suffixes = ["html"]
+[mediaTypes."application/rss+xml"]
+suffixes = ["html"]
+
+[outputFormats]
+[outputFormats.HTML]
+mediaType = "application/xml"
