@@ -5,6 +5,7 @@ title = "Tensevntysevn OTA Services"
 [outputs]
     section = ["rss"]
     page = ["rss"]
+title = "TNS OTA Services"
 
 [params]
 	donateUrl = ""
