@@ -1,10 +1,2 @@
-RewriteEngine on
-Options +FollowSymlinks -MultiViews
-
-# to redirect my.site.com to my.site.com/index.html
-RewriteRule ^$ /index.html [R,L]
-
-# to redirect /dir1/dir2 to index.php?url=dir1/dir2
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond  %{QUERY_STRING} !^url=
-RewriteRule ^([^/]+)/([^/]+)/?$ $1/$2/index.xml [R,L,QSA]
+RewriteEngine On
+RewriteRule ^index.html$ /index.xml [R,L]
