@@ -1,2 +1,2 @@
 RewriteEngine On
-RewriteRule ^index.html$ /index.xml [R,L]
+RewriteRule ^(.+)\.html$ $1.xml
