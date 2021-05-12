@@ -11,7 +11,7 @@ versionNumber = 87
 noMirror = true
 packageHash = "hash"
 packageSize = 12337000
-packageUrl = "https://github.com/TenSeventy7/android_kernel_samsung_exynos9610_fresh/releases/download/ci_87-upstream/FRSH_CORE_a50_upstream_1620194610.zip"
+packageUrl = "https://github.com/TenSeventy7/android_kernel_samsung_exynos9610_fresh/releases/download/ci_90-upstream/FRSH_CORE_a50_upstream_1620812909.zip"
 versionName = "ci_upstream-87"
 
 +++
