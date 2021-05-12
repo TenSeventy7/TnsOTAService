@@ -6,13 +6,13 @@ imageUrl = "/uploads/slide26.PNG"
 packageName = "io.tns.shadowx.upstream"
 rom = "fresh"
 title = "Fresh Core Beta"
-versionNumber = 87
+versionNumber = 90
 [addon]
 noMirror = true
 packageHash = "hash"
 packageSize = 12337000
 packageUrl = "https://github.com/TenSeventy7/android_kernel_samsung_exynos9610_fresh/releases/download/ci_90-upstream/FRSH_CORE_a50_upstream_1620812909.zip"
-versionName = "ci_upstream-87"
+versionName = "ci_upstream-90"
 
 +++
 This addon is **not uninstallable** and cannot be removed unless Fresh is reinstalled. This addon **replaces** the stable build of Fresh Core installed with beta, upstream builds straight from the kernel repository.
