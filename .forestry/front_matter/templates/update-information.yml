@@ -121,6 +121,7 @@ fields:
     description: MD5 Hash of the package.
   description: Information for the full-type package of the release.
 pages:
+- content/fresh/a50dd/stable/21051301.md
 - content/fresh/a50xx/beta/21032203.md
 - content/fresh/a50xx/beta/21040501.md
 - content/fresh/a50xx/beta/21040502.md
