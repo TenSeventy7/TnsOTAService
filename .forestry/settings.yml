@@ -4,6 +4,8 @@ auto_deploy: false
 admin_path: "/admin/"
 webhook_url: 
 sections:
+- type: heading
+  label: ROMs
 - type: directory
   path: content/fresh
   label: Fresh
@@ -13,12 +15,31 @@ sections:
   - update-information
   - rom-information
 - type: directory
-  path: content/addons
+  path: content/freshx
+  label: Fresh 3.2+
+  create: all
+  match: "**/*"
+  templates:
+  - update-information
+  - rom-information
+- type: heading
+  label: Addons
+- type: directory
+  path: content/addons/fresh
   label: Addons
   create: all
   match: "**/*"
   templates:
   - addon-information
+- type: directory
+  path: content/addons/freshx
+  label: Fresh 3.2+
+  create: all
+  match: "**/*"
+  templates:
+  - addon-information
+- type: heading
+  label: App Updates
 - type: document
   path: data/freshApp.yml
   label: Fresh App
