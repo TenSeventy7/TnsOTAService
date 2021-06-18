@@ -26,14 +26,14 @@ sections:
   label: Addons
 - type: directory
   path: content/addons/fresh
-  label: Addons
+  label: Fresh 3.1
   create: all
   match: "**/*"
   templates:
   - addon-information
 - type: directory
   path: content/addons/freshx
-  label: Fresh 3.2+
+  label: Fresh 3.2+ Addons
   create: all
   match: "**/*"
   templates:

@@ -80,16 +80,3 @@ fields:
     label: Package Hash
     description: MD5 hash of the package.
   description: Information about the addon release.
-pages:
-- content/addons/fresh/ant.md
-- content/addons/fresh/bixby-smart.md
-- content/addons/fresh/bixby-vision.md
-- content/addons/fresh/bixby-voice.md
-- content/addons/fresh/facebook-services.md
-- content/addons/fresh/fake-encryption-flag.md
-- content/addons/fresh/fresh-core-beta.md
-- content/addons/fresh/g.md
-- content/addons/fresh/my-galaxy.md
-- content/addons/fresh/samsung-live.md
-- content/addons/fresh/seamless.md
-- content/addons/fresh/single-speaker.md
