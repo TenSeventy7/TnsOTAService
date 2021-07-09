@@ -4,7 +4,7 @@ category = ""
 description = "Stock speaker behavior."
 imageUrl = "/uploads/singlespeaker.png"
 packageName = "io.tns.fresh.ssp"
-rom = "freshx"
+rom = "fresh"
 title = "Single Speaker"
 versionNumber = 20210430
 [addon]
