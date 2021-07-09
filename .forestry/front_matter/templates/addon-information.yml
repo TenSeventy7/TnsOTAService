@@ -52,7 +52,7 @@ fields:
   config:
     required: true
   default: fresh
-  hidden: true
+  hidden: false
 - type: field_group
   name: addon
   label: Addon Information

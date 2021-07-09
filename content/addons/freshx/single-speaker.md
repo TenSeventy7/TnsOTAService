@@ -1,12 +1,12 @@
 +++
+addonPublisher = "TenSeventy7"
 category = ""
 description = "Stock speaker behavior."
 imageUrl = "/uploads/singlespeaker.png"
 packageName = "io.tns.fresh.ssp"
-versionNumber = 20210430
-addonPublisher = "TenSeventy7"
-rom = "fresh"
+rom = "freshx"
 title = "Single Speaker"
+versionNumber = 20210430
 [addon]
 noMirror = false
 packageHash = "hash"
