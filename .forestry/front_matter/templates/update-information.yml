@@ -61,7 +61,7 @@ fields:
   description: Android release information for update.
 - type: field_group
   name: delta
-  label: Delta Package
+  label: Package Information
   fields:
   - name: noMirror
     type: boolean
@@ -89,37 +89,7 @@ fields:
     description: MD5 Hash of the package.
     config:
       required: true
-  description: Information for the delta-type package of the release.
-- type: field_group
-  name: full
-  label: Full Package
-  fields:
-  - name: noMirror
-    type: boolean
-    description: Disable mirroring of full package. <strong>Full URL must be specified
-      if this is enabled!</strong>
-    label: Disable Mirroring
-  - type: text
-    name: packageUrl
-    label: Package URL
-    config:
-      required: true
-    description: Direct URL of the package. <strong>Only specify file path from SourceForge
-      Files root if mirroring is enabled.</strong>
-  - type: number
-    name: packageSize
-    label: Package Size
-    description: Size of the update package.
-    config:
-      required: true
-      max: 2147483647
-  - type: text
-    name: packageHash
-    label: Package Hash
-    config:
-      required: true
-    description: MD5 Hash of the package.
-  description: Information for the full-type package of the release.
+  description: Information for the package of the release.
 pages:
 - content/fresh/a50dd/stable/21051301.md
 - content/fresh/a50xx/beta/21032203.md
