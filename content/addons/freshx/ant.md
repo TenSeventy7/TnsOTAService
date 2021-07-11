@@ -1,12 +1,12 @@
 +++
+addonPublisher = "TenSeventy7"
 category = ""
 description = "Makes it easy."
-imageUrl = "/uploads/slide23.PNG"
+imageUrl = "/uploads/ant.png"
 packageName = "io.tns.fresh.antplus"
-versionNumber = 20210430
-addonPublisher = "TenSeventy7"
 rom = "fresh"
 title = "ANT+"
+versionNumber = 20210430
 [addon]
 noMirror = false
 packageHash = "hash"
