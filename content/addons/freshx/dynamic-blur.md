@@ -4,7 +4,7 @@ category = ""
 description = "Enable live blur on your device!"
 imageUrl = "/uploads/dynamic-blur.png"
 packageName = "io.tns.fresh.liveblur"
-rom = "fresh"
+rom = "freshx"
 title = "Dynamic Blur"
 versionNumber = 21071101
 [addon]
