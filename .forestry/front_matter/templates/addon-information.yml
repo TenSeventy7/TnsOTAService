@@ -80,3 +80,5 @@ fields:
     label: Package Hash
     description: MD5 hash of the package.
   description: Information about the addon release.
+pages:
+- content/addons/freshx/dynamic-blur.md
