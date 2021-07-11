@@ -1,12 +1,12 @@
 +++
+addonPublisher = "TenSeventy7"
 category = ""
 description = "More lively experiences."
-imageUrl = "/uploads/live.png"
+imageUrl = "/uploads/samsung-live.png"
 packageName = "io.tns.fresh.samsung.live"
-versionNumber = 20210430
-addonPublisher = "TenSeventy7"
 rom = "fresh"
 title = "Samsung Live"
+versionNumber = 20210430
 [addon]
 noMirror = false
 packageHash = "hash"
