@@ -2,7 +2,7 @@
 addonPublisher = "TenSeventy7"
 category = ""
 description = "More lively experiences."
-imageUrl = "/uploads/samsung-live.png"
+imageUrl = "/uploads/samsung-live-2.png"
 packageName = "io.tns.fresh.samsung.live"
 rom = "fresh"
 title = "Samsung Live"
