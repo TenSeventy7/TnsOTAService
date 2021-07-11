@@ -2,7 +2,7 @@
 addonPublisher = "TenSeventy7"
 category = ""
 description = "Make your device smarter."
-imageUrl = "/uploads/bixby-smart.png"
+imageUrl = "/uploads/bixby-smart-2.png"
 packageName = "io.tns.fresh.bixby.smart"
 rom = "fresh"
 title = "Bixby Smart"
