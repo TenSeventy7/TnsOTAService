@@ -1,12 +1,12 @@
 +++
+addonPublisher = "TenSeventy7"
 category = ""
 description = "Fake encryption status"
-imageUrl = "/uploads/encrypt.png"
+imageUrl = "/uploads/encryption.png"
 packageName = "io.tns.fresh.encryptflag"
-versionNumber = 20210430
-addonPublisher = "TenSeventy7"
 rom = "fresh"
 title = "Fake Encryption Flag"
+versionNumber = 20210430
 [addon]
 noMirror = false
 packageHash = "hash"
