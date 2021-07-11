@@ -2,7 +2,7 @@
 addonPublisher = "TenSeventy7"
 category = ""
 description = "Stock speaker behavior."
-imageUrl = "/uploads/singlespeaker.png"
+imageUrl = "/uploads/single-speaker.png"
 packageName = "io.tns.fresh.ssp"
 rom = "fresh"
 title = "Single Speaker"
