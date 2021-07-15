@@ -21,10 +21,6 @@ fields:
   label: Publisher
   description: Developer of the addon.
   default: TenSeventy7
-- type: text
-  name: category
-  label: Category
-  description: Category of the addon.
 - name: versionNumber
   type: number
   label: Version number
@@ -75,10 +71,6 @@ fields:
     name: packageSize
     label: Package Size
     description: Size of the addon package.
-  - type: text
-    name: packageHash
-    label: Package Hash
-    description: MD5 hash of the package.
   description: Information about the addon release.
 pages:
 - content/addons/freshx/dynamic-blur.md

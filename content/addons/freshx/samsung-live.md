@@ -1,18 +1,16 @@
 +++
 addonPublisher = "TenSeventy7"
-category = ""
 description = "More lively experiences."
 imageUrl = "/uploads/samsung-live-2.png"
 packageName = "io.tns.fresh.samsung.live"
-rom = "fresh"
+rom = "freshx"
 title = "Samsung Live"
-versionNumber = 20210430
+versionNumber = 21071101
 [addon]
 noMirror = false
-packageHash = "hash"
-packageSize = 17062252
-packageUrl = "Addons/12.0.2.0/FRSH-Addon_Samsung%20Live_12.0.2.0_20210430.zip"
-versionName = "12.0.2.0"
+packageSize = 10587323
+packageUrl = "Addons/12.2.1.1/FRSH-Addon_Samsung%20Live_12.2.1.1_21071101.zip"
+versionName = "12.2.1.1"
 
 +++
 More lively, wireless experiences with Samsung. Includes Wi-Fi Direct sharing, Samsung Quick Share, and Samsung Smart View.

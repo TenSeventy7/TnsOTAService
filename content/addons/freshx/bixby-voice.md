@@ -1,18 +1,16 @@
 +++
 addonPublisher = "TenSeventy7"
-category = ""
 description = "Unlock your phone's full potential."
 imageUrl = "/uploads/slide21.PNG"
 packageName = "io.tns.fresh.bixby.voice"
-rom = "fresh"
+rom = "freshx"
 title = "Bixby Voice"
-versionNumber = 20210513
+versionNumber = 21071101
 [addon]
 noMirror = false
-packageHash = "hash"
-packageSize = 66982724
-packageUrl = "Addons/12.0.2.1/FRSH-Addon_Bixby%20Voice_12.0.2.1_20210513.zip"
-versionName = "12.0.2.1"
+packageSize = 68116350
+packageUrl = "Addons/12.2.1.1/FRSH-Addon_Bixby%20Voice_12.2.1.1_21071101.zip"
+versionName = "12.2.1.1"
 
 +++
 ## Do more with Bixby.

@@ -1,20 +1,20 @@
 +++
-category = ""
 description = "Discover a new perspective."
 imageUrl = "/uploads/slide22.PNG"
 packageName = "io.tns.fresh.bixby.vision"
-versionNumber = 20210430
+versionNumber = 21071101
 addonPublisher = "TenSeventy7"
-rom = "fresh"
+rom = "freshx"
 title = "Bixby Vision"
 [addon]
 noMirror = false
-packageHash = "hash"
-packageSize = 19029498
-packageUrl = "Addons/12.0.2.0/FRSH-Addon_Bixby%20Vision_12.0.2.0_20210430.zip"
-versionName = "12.0.2.0"
+packageSize = 20326048
+packageUrl = "Addons/12.2.1.1/FRSH-Addon_Bixby%20Vision_12.2.1.1_21071101.zip"
+versionName = "12.2.1.1"
 
 +++
+Installs the **Bixby Vision** app.
+
 ### Discover a new perspective with Bixby Vision.
 
 Built into your smartphone, Bixby Vision makes it **easier** to learn more about **the world around you**.

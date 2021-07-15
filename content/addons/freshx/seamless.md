@@ -1,18 +1,16 @@
 +++
-category = ""
 description = "Switch between devices effortlessly."
 imageUrl = "/uploads/slide19.PNG"
 packageName = "io.tns.fresh.mdec"
-versionNumber = 20210430
+versionNumber = 21071101
 addonPublisher = "TenSeventy7"
-rom = "fresh"
+rom = "freshx"
 title = "Samsung Seamless"
 [addon]
 noMirror = false
-packageHash = "hash"
-packageSize = 15633015
-packageUrl = "Addons/12.0.2.0/FRSH-Addon_Samsung%20Seamless_12.0.2.0_20210430.zip"
-versionName = "12.0.2.0"
+packageSize = 16889330
+packageUrl = "Addons/12.2.1.1/FRSH-Addon_Samsung%20Seamless_12.2.1.1_21071101.zip"
+versionName = "12.2.1.1"
 
 +++
 Includes **Link to Windows** and **Call and text on other devices.**

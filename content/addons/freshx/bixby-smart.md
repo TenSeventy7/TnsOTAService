@@ -1,18 +1,16 @@
 +++
 addonPublisher = "TenSeventy7"
-category = ""
 description = "Make your device smarter."
 imageUrl = "/uploads/bixby-smart-2.png"
 packageName = "io.tns.fresh.bixby.smart"
-rom = "fresh"
+rom = "freshx"
 title = "Bixby Smart"
-versionNumber = 20210430
+versionNumber = 21071101
 [addon]
 noMirror = false
-packageHash = "hash"
-packageSize = 22778060
-packageUrl = "Addons/12.0.2.0/FRSH-Addon_Bixby%20Smart_12.0.2.0_20210430.zip"
-versionName = "12.0.2.0"
+packageSize = 24520277
+packageUrl = "Addons/12.2.1.1/FRSH-Addon_Bixby%20Smart_12.2.1.1_21071101.zip"
+versionName = "12.2.1.1"
 
 +++
 Includes **Bixby Routines** and **Smart Reminders**.

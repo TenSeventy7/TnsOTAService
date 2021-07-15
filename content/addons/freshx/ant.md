@@ -1,18 +1,16 @@
 +++
 addonPublisher = "TenSeventy7"
-category = ""
 description = "Makes it easy."
 imageUrl = "/uploads/ant.png"
 packageName = "io.tns.fresh.antplus"
-rom = "fresh"
+rom = "freshx"
 title = "ANT+"
-versionNumber = 20210430
+versionNumber = 21071101
 [addon]
 noMirror = false
-packageHash = "hash"
-packageSize = 3015959
-packageUrl = "Addons/12.0.2.0/FRSH-Addon_ANT%2B_12.0.2.0_20210430.zip"
-versionName = "12.0.2.0"
+packageSize = 3859108
+packageUrl = "Addons/12.2.1.1/FRSH-Addon_ANT%2B_12.2.1.1_21071101.zip"
+versionName = "12.2.1.1"
 
 +++
 ## YOUR HEALTH & FITNESS PARTNER
@@ -29,3 +27,5 @@ TOP BRANDS DELIVER WORLD LEADING DEVICES.
 ##### WITH ANT+ IT JUST WORKS!
 
 Featuring products from ANT+ partners, this tool does the matching for you. All of the products listed in this directory have been certified by our engineers or verified by the manufacturers as compatible with the designated activities.
+
+This addon installs ANT+ support, as well as associated services.

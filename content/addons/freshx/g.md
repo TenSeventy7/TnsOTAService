@@ -1,18 +1,16 @@
 +++
 addonPublisher = "TenSeventy7"
-category = ""
 description = "Making Android more useful."
 imageUrl = "/uploads/slide25.PNG"
 packageName = "io.tns.fresh.gplus"
-rom = "fresh"
+rom = "freshx"
 title = "G+"
-versionNumber = 20210430
+versionNumber = 21071101
 [addon]
 noMirror = false
-packageHash = "hash"
-packageSize = 155897642
-packageUrl = "Addons/12.0.2.0/FRSH-Addon_G%2B_12.0.2.0_20210430.zip"
-versionName = "12.0.2.0"
+packageSize = 162357149
+packageUrl = "Addons/12.2.1.1/FRSH-Addon_G%2B_12.2.1.1_21071101.zip"
+versionName = "12.2.1.1"
 
 +++
 Includes **all optional Google apps**, including Gmail, Maps, the Google app, and Duo.
