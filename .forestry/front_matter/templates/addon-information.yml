@@ -73,4 +73,5 @@ fields:
     description: Size of the addon package.
   description: Information about the addon release.
 pages:
+- content/addons/freshx/dual-messenger.md
 - content/addons/freshx/dynamic-blur.md
