@@ -1,0 +1,63 @@
+{{ define "response" }}
+  {{ $addons := (where (where $.Site.RegularPages "Section" "addons" ) "Params.rom" (.FirstSection.Params.id)) }}
+  {{ $addonCount := len $addons }}
+  <RomName>{{ print .FirstSection.Params.title }}</RomName>
+  <Developer>TenSeventy7 and the Fresh Community</Developer>
+  <Release type="integer">2</Release>
+  {{ with .FirstSection.Params.urls.website }}<WebsiteURL>{{ . }}</WebsiteURL>{{ end }}
+  {{ with .CurrentSection.Params.urls.forum }}<ForumURL>{{ . }}</ForumURL>{{ end }}
+  {{ with .FirstSection.Params.urls.discord }}<DiscordURL>{{ . }}</DiscordURL>{{ end }}
+  {{ with .FirstSection.Params.urls.gitIssues }}<GitIssues>{{ . }}</GitIssues>{{ end }}
+  {{ with .FirstSection.Params.urls.gitDiscussion }}<GitDiscussion>{{ . }}</GitDiscussion>{{ end }}
+  {{ if .Site.Params.donateUrl }}<DonateURL>{{ . }}</DonateURL>{{else}}<DonateURL nil="true" />{{ end }}
+
+  {{ if gt $addonCount 0 }}
+  <Addons>    
+    <AddonCount>{{ $addonCount }}</AddonCount>
+    <AddonsManifest>{{ .Site.BaseURL }}addons/{{ .FirstSection.Params.id }}/</AddonsManifest>
+    <AddonsURL>{{ .Site.BaseURL }}addons/{{ .FirstSection.Params.id }}/</AddonsURL>
+  </Addons>
+  {{ end }}
+
+  <FreshApp>    
+    <AppVersion>{{ .Site.Data.freshAppNX.versionNumber }}</AppVersion>
+    <AppUrl>{{ .Site.Data.freshAppNX.apkFile }}</AppUrl>
+  </FreshApp>
+
+  {{ with .NextInSection }}
+  {{ block "update" . }}{{- end }}
+  {{ else }}
+  {{ block "update" . }}{{- end }}
+  {{ end }}
+{{ end }}
+
+{{ define "update" }}
+  <System>
+    <Android>{{ .Params.android.version }}</Android>
+    {{ with .Params.android.sesl }}<SemVersion>{{ . }}</SemVersion>{{ end }}
+    {{ with .Params.android.spl }}<SPL>{{ dateFormat "2006-01-02" . }}</SPL>{{ end }}
+  </System>
+
+  <Build>
+    <VersionName>{{ print .FirstSection.Params.title " " .Params.releaseVersion " " .Params.releaseVariant }}</VersionName>
+    <BuildVersion type="integer">{{ .Title }}</BuildVersion>
+    <ReleaseVersion>{{ .Params.releaseVersion }}</ReleaseVersion>
+    <ReleaseVariant>{{ .Params.releaseVariant }}</ReleaseVariant>
+
+    <Package>
+    {{ if .Params.delta.noMirror }}
+      <DirectUrl>{{ .Params.delta.packageUrl }}</DirectUrl>
+      <HttpUrl>{{ .Params.delta.packageUrl }}</HttpUrl>
+    {{ else }}
+      <DirectUrl>https://downloads.sourceforge.net/project/freshroms/{{ .Params.delta.packageUrl }}</DirectUrl>
+      <HttpUrl>https://sourceforge.net/projects/freshroms/files/{{ .Params.delta.packageUrl }}</HttpUrl>
+    {{ end }}
+      <FileSize type="integer">{{ .Params.delta.packageSize }}</FileSize>
+      <CheckMD5>{{ .Params.delta.packageHash }}</CheckMD5>
+    </Package>
+
+    <Changelog>
+      {{ .RawContent }}
+    </Changelog>
+  </Build>
+{{ end }}
