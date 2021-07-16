@@ -10,7 +10,7 @@ versionNumber = 21071101
 noMirror = false
 packageSize = 20326048
 packageUrl = "Addons/12.2.1.1/FRSH-Addon_Bixby%20Vision_12.2.1.0_21071101.zip"
-versionName = "12.2.1.1"
+versionName = "12.2.1.0"
 
 +++
 Installs the **Bixby Vision** app.
