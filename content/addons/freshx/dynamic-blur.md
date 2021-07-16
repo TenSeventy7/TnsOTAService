@@ -9,7 +9,7 @@ versionNumber = 21071101
 [addon]
 noMirror = false
 packageSize = 3096374
-packageUrl = "url"
+packageUrl = "Addons/12.2.1.1/FRSH-Addon_Dynamic%20Blur_12.2.1.1_21071101.zip"
 versionName = "12.2.1.1"
 
 +++
