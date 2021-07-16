@@ -33,7 +33,7 @@ sections:
   - addon-information
 - type: directory
   path: content/addons/freshx
-  label: Fresh 3.2+ Addons
+  label: Fresh 3.2+
   create: all
   match: "**/*"
   templates:
@@ -41,8 +41,11 @@ sections:
 - type: heading
   label: App Updates
 - type: document
-  path: data/freshApp.yml
+  path: data/freshAppNX.yml
   label: Fresh App
+- type: document
+  path: data/freshApp.yml
+  label: Fresh Hub (Old)
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
