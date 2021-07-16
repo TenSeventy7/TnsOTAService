@@ -1,15 +1,15 @@
 +++
+addonPublisher = "TenSeventy7"
 description = "Discover a new perspective."
 imageUrl = "/uploads/slide22.PNG"
 packageName = "io.tns.fresh.bixby.vision"
-versionNumber = 21071101
-addonPublisher = "TenSeventy7"
 rom = "freshx"
 title = "Bixby Vision"
+versionNumber = 21071101
 [addon]
 noMirror = false
 packageSize = 20326048
-packageUrl = "Addons/12.2.1.1/FRSH-Addon_Bixby%20Vision_12.2.1.1_21071101.zip"
+packageUrl = "Addons/12.2.1.1/FRSH-Addon_Bixby%20Vision_12.2.1.0_21071101.zip"
 versionName = "12.2.1.1"
 
 +++
