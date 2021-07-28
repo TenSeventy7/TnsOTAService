@@ -82,7 +82,7 @@ fields:
     config:
       required: true
       min: 
-      max: 2147483647
+      max: 9223372036854776000
   - type: text
     name: packageHash
     label: Package Hash
