@@ -92,6 +92,7 @@ fields:
   description: Information for the package of the release.
 pages:
 - content/fresh/a50dd/stable/21051301.md
+- content/fresh/a50dd/stable/21072303.md
 - content/fresh/a50xx/beta/21032203.md
 - content/fresh/a50xx/beta/21040501.md
 - content/fresh/a50xx/beta/21040502.md
