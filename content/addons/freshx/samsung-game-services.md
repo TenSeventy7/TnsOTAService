@@ -2,15 +2,15 @@
 description = "Level up mobile gaming."
 imageUrl = "/uploads/slide27.PNG"
 packageName = "io.tns.fresh.gamehome"
-versionNumber = 21071101
+versionNumber = 21073001
 addonPublisher = "TenSeventy7"
 rom = "freshx"
 title = "Samsung Game Home"
 [addon]
 noMirror = false
-packageSize = 25822495
-packageUrl = "Addons/12.2.1.1/FRSH-Addon_Samsung%20Game%20Home_12.2.1.1_21071101.zip"
-versionName = "12.2.1.1"
+packageSize = 25822878
+packageUrl = "Addons/12.2.1.2/FRSH-Addon_Samsung%20Game%20Home_12.2.1.2_21073001.zip"
+versionName = "12.2.1.2"
 
 +++
 **Level up mobile gaming.**

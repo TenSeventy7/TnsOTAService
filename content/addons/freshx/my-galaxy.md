@@ -5,12 +5,12 @@ imageUrl = "/uploads/slide20.PNG"
 packageName = "io.tns.fresh.sm.mygalaxy"
 rom = "freshx"
 title = "My Galaxy"
-versionNumber = 21071101
+versionNumber = 21073001
 [addon]
 noMirror = false
-packageSize = 105369613
-packageUrl = "Addons/12.2.1.1/FRSH-Addon_My%20Galaxy_12.2.1.1_21071101.zip"
-versionName = "12.2.1.1"
+packageSize = 105370005
+packageUrl = "Addons/12.2.1.2/FRSH-Addon_My%20Galaxy_12.2.1.2_21073001.zip"
+versionName = "12.2.1.2"
 
 +++
 **Supercharge your Samsung Experience to new heights!** Apps that make your phone more of your own.

@@ -5,12 +5,12 @@ imageUrl = "/uploads/slide25.PNG"
 packageName = "io.tns.fresh.gplus"
 rom = "freshx"
 title = "G+"
-versionNumber = 21071101
+versionNumber = 21073001
 [addon]
 noMirror = false
-packageSize = 162357149
-packageUrl = "Addons/12.2.1.1/FRSH-Addon_G%2B_12.2.1.1_21071101.zip"
-versionName = "12.2.1.1"
+packageSize = 162357536
+packageUrl = "Addons/12.2.1.2/FRSH-Addon_G%2B_12.2.1.2_21073001.zip"
+versionName = "12.2.1.2"
 
 +++
 Includes **all optional Google apps**, including Gmail, Maps, the Google app, and Duo.

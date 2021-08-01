@@ -5,12 +5,12 @@ imageUrl = "/uploads/bixby-smart-2.png"
 packageName = "io.tns.fresh.bixby.smart"
 rom = "freshx"
 title = "Bixby Smart"
-versionNumber = 21071101
+versionNumber = 21073001
 [addon]
 noMirror = false
-packageSize = 24520277
-packageUrl = "Addons/12.2.1.1/FRSH-Addon_Bixby%20Smart_12.2.1.1_21071101.zip"
-versionName = "12.2.1.1"
+packageSize = 24520661
+packageUrl = "Addons/12.2.1.2/FRSH-Addon_Bixby%20Smart_12.2.1.2_21073001.zip"
+versionName = "12.2.1.2"
 
 +++
 Includes **Bixby Routines** and **Smart Reminders**.

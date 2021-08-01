@@ -8,9 +8,9 @@ title = "Samsung DeX"
 versionNumber = 21060701
 [addon]
 noMirror = false
-packageSize = 28684605
-packageUrl = "Addons/12.2.1.1/FRSH-Addon_Samsung%20DeX_12.2.1.1_21071101.zip"
-versionName = "12.2.1.1"
+packageSize = 28684992
+packageUrl = "Addons/12.2.1.2/FRSH-Addon_Samsung%20DeX_12.2.1.2_21073001.zip"
+versionName = "12.2.1.2"
 
 +++
 Installs **Samsung DeX Wireless** and **DeX on PC** support. **Requires Fresh 3.2 and later.**

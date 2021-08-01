@@ -5,12 +5,12 @@ imageUrl = "/uploads/slide22.PNG"
 packageName = "io.tns.fresh.bixby.vision"
 rom = "freshx"
 title = "Bixby Vision"
-versionNumber = 21071101
+versionNumber = 21073001
 [addon]
 noMirror = false
-packageSize = 20326048
-packageUrl = "Addons/12.2.1.1/FRSH-Addon_Bixby%20Vision_12.2.1.0_21071101.zip"
-versionName = "12.2.1.0"
+packageSize = 20326435
+packageUrl = "Addons/12.2.1.2/FRSH-Addon_Bixby%20Vision_12.2.1.2_21073001.zip"
+versionName = "12.2.1.2"
 
 +++
 Installs the **Bixby Vision** app.

@@ -5,12 +5,12 @@ imageUrl = "/uploads/dual-messenger.png"
 packageName = "io.tns.fresh.dualmessenger"
 rom = "freshx"
 title = "Dual Messenger"
-versionNumber = 21071101
+versionNumber = 21073001
 [addon]
 noMirror = false
-packageSize = 6555741
-packageUrl = "Addons/12.2.1.1/FRSH-Addon_Dual%20Messenger_12.2.1.1_21071101.zip"
-versionName = "12.2.1.1"
+packageSize = 6556128
+packageUrl = "Addons/12.2.1.2/FRSH-Addon_Dual%20Messenger_12.2.1.2_21073001.zip"
+versionName = "12.2.1.2"
 
 +++
 **Dangerous addon!** Samsung has changed how "special users", like the Dual Messenger profile, are managed on One UI 3. This is causing **bootloops** on devices with **Dual Messenger enabled and lock screen security set.**

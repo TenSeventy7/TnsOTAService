@@ -5,12 +5,12 @@ imageUrl = "/uploads/slide21.PNG"
 packageName = "io.tns.fresh.bixby.voice"
 rom = "freshx"
 title = "Bixby Voice"
-versionNumber = 21071101
+versionNumber = 21073001
 [addon]
 noMirror = false
-packageSize = 68116350
-packageUrl = "Addons/12.2.1.1/FRSH-Addon_Bixby%20Voice_12.2.1.1_21071101.zip"
-versionName = "12.2.1.1"
+packageSize = 68116743
+packageUrl = "Addons/12.2.1.2/FRSH-Addon_Bixby%20Voice_12.2.1.2_21073001.zip"
+versionName = "12.2.1.2"
 
 +++
 ## Do more with Bixby.
