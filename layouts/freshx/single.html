@@ -47,7 +47,7 @@
     <Package>
     {{ if .Params.delta.noMirror }}
       <DirectUrl><![CDATA[{{ .Params.delta.packageUrl }}]]></DirectUrl>
-      <HttpUrl>![CDATA[{{ .Params.delta.packageUrl }}]]></HttpUrl>
+      <HttpUrl><![CDATA[{{ .Params.delta.packageUrl }}]]></HttpUrl>
     {{ else }}
       <DirectUrl>https://downloads.sourceforge.net/project/freshroms/{{ .Params.delta.packageUrl }}</DirectUrl>
       <HttpUrl>https://sourceforge.net/projects/freshroms/files/{{ .Params.delta.packageUrl }}</HttpUrl>
