@@ -16,5 +16,6 @@ suffixes = ["html"]
 suffixes = ["html"]
 
 [outputFormats]
-[outputFormats.HTML]
-mediaType = "application/xml"
+  [outputFormats.html]
+    mediaType = "application/xml"
+    isPlainText = true
